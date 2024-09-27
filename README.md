@@ -2,10 +2,10 @@
 This repository contains the code to recreate the experiments from the abovementioned paper (https://arxiv.org/pdf/2405.04443)
 
 # Crossmodal-Entailment
+
 - environment.yml contains the conda environment with all necessary packages
 
-- to train, save and evaluate the models with the configurations mentioned in the paper,
-execute the modelCreation.sh file
+- to train, save and evaluate the models with the configurations mentioned in the paper, unzip the contents in the visual_genome_image_features folder and execute the modelCreation.sh file
 
 - preprocess.py requires a different pytorch version (1.12. or higher)
 
