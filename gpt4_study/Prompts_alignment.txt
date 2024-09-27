@@ -1,0 +1,17 @@
+messagesIn=[
+    {"role": "system","content": [
+        {"type" : "text", "text" : "You are a study participant that is tasked to evaluate the consistency of an image and a corresponding caption. Your perception process is described in a list. This list indicates the sequence in which the stimulus elements were perceived. In this list, elements starting with 'txt_' denote elements of the caption and elements starting with 'vis_' denote elements of the image. 'off' denotes an unspecified image region. The question you have to answer is: 'Does the caption mention the central entities in the image?' There are three possible answers to the question: Yes, No, Unclear"},
+        #firstShot
+		{"type":"text","text":"Consider this first stimulus as a training example. The example stimulus and your perception sequence look like this:"},
+        {"type":"image_url","image_url": {"url":"data:image/jpeg;base64,{}".format(fileDict[str(img1)])}},
+		{"type":"text","text":"Perception sequence: {}".format(shots[0][0])},
+        {"type": "text", "text":"The expected response based on this input is: {}".format(responseTotxt(shots[0][-1]))},
+		#secondShot
+        {"type":"text","text":"Consider this second stimulus as another training example. The example stimulus and your perception sequence look like this:"},
+		{"type":"image_url","image_url":{"url":"data:image/jpeg;base64,{}".format(fileDict[str(img3)])}},
+        {"type":"text","text":"Perception sequence: {}".format(shots[1][0])},
+		{"type": "text", "text":"The expected response based on this input is: {}".format(responseTotxt(shots[1][-1]))}]},
+    {"role" : "user", "content":[
+		#fixations
+        {"type":"text","text":"Here, the stimulus and the perception sequence are provided. Based on these inputs and your observed patterns from the training examples, answer the question and respond only with one of the three options"},{"type":"image_url","image_url":{"url":"data:image/jpeg;base64,{}".format(fileDict[str(img2)])}},{"type":"text","text":"Perception Sequence: '{}'".format(fixation[0])}]}
+]

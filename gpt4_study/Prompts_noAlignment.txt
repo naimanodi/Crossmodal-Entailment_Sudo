@@ -1,0 +1,7 @@
+messagesIn=[
+    {"role": "system","content": [
+        {"type" : "text", "text" : "You are a study participant that is tasked to evaluate the consistency of an image and a corresponding caption. The question you have to answer is: 'Does the caption mention the central entities in the image?' There are three possible answers to the question: Yes, No, Unclear"}]},
+    {"role" : "user", "content":[
+		{"type":"text","text":"Here, the stimulus is provided. Based on this input, answer the question and respond only with one of the three options"},
+		{"type":"image_url","image_url":{"url":"data:image/jpeg;base64,{}".format(fileDict[str(img)])}}]}
+]
