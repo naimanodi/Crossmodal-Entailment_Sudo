@@ -1,5 +1,9 @@
+# UPDATE NOTICE
+Both paper and code were re-worked and will soon be updated to the latest version
+
 # POV Learning: Individual Alignment of Multimodal Models using Human Perception
-This repository contains the code to recreate the experiments from the abovementioned paper (https://arxiv.org/pdf/2405.04443)
+This repository contains the code to recreate the experiments from the preprint (https://arxiv.org/pdf/2405.04443)
+
 
 # Crossmodal-Entailment
 
