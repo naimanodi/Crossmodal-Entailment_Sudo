@@ -1,0 +1,2862 @@
+13/05/2025 22:08:37
+Mode: Transformer
+FF: 256
+Emb: 16
+Batch: 128
+LR: 0.0001
+Scaling: 500
+
+Downloading:   0%|          | 0.00/570 [00:00<?, ?B/s]
+Downloading: 100%|██████████| 570/570 [00:00<00:00, 414kB/s]
+
+Downloading:   0%|          | 0.00/420M [00:00<?, ?B/s]
+Downloading:   1%|▏         | 5.51M/420M [00:00<00:07, 57.8MB/s]
+Downloading:   3%|▎         | 13.0M/420M [00:00<00:06, 70.2MB/s]
+Downloading:   5%|▍         | 20.6M/420M [00:00<00:05, 74.6MB/s]
+Downloading:   7%|▋         | 28.3M/420M [00:00<00:05, 76.9MB/s]
+Downloading:   9%|▊         | 36.0M/420M [00:00<00:05, 78.1MB/s]
+Downloading:  11%|█         | 45.6M/420M [00:00<00:04, 85.7MB/s]
+Downloading:  13%|█▎        | 55.8M/420M [00:00<00:04, 92.7MB/s]
+Downloading:  16%|█▌        | 65.9M/420M [00:00<00:03, 96.9MB/s]
+Downloading:  18%|█▊        | 76.0M/420M [00:00<00:03, 99.9MB/s]
+Downloading:  21%|██        | 86.2M/420M [00:01<00:03, 102MB/s] 
+Downloading:  23%|██▎       | 96.5M/420M [00:01<00:03, 104MB/s]
+Downloading:  25%|██▌       | 107M/420M [00:01<00:03, 105MB/s] 
+Downloading:  28%|██▊       | 117M/420M [00:01<00:03, 106MB/s]
+Downloading:  30%|███       | 127M/420M [00:01<00:02, 106MB/s]
+Downloading:  33%|███▎      | 138M/420M [00:01<00:02, 107MB/s]
+Downloading:  35%|███▌      | 148M/420M [00:01<00:02, 107MB/s]
+Downloading:  38%|███▊      | 158M/420M [00:01<00:02, 107MB/s]
+Downloading:  40%|████      | 168M/420M [00:01<00:02, 108MB/s]
+Downloading:  43%|████▎     | 179M/420M [00:01<00:02, 108MB/s]
+Downloading:  45%|████▍     | 189M/420M [00:02<00:02, 108MB/s]
+Downloading:  47%|████▋     | 199M/420M [00:02<00:02, 108MB/s]
+Downloading:  50%|████▉     | 209M/420M [00:02<00:02, 107MB/s]
+Downloading:  52%|█████▏    | 220M/420M [00:02<00:01, 107MB/s]
+Downloading:  55%|█████▍    | 230M/420M [00:02<00:01, 107MB/s]
+Downloading:  57%|█████▋    | 240M/420M [00:02<00:01, 108MB/s]
+Downloading:  60%|█████▉    | 251M/420M [00:02<00:01, 108MB/s]
+Downloading:  62%|██████▏   | 261M/420M [00:02<00:01, 108MB/s]
+Downloading:  65%|██████▍   | 271M/420M [00:02<00:01, 108MB/s]
+Downloading:  67%|██████▋   | 281M/420M [00:02<00:01, 106MB/s]
+Downloading:  69%|██████▉   | 292M/420M [00:03<00:01, 107MB/s]
+Downloading:  72%|███████▏  | 302M/420M [00:03<00:01, 107MB/s]
+Downloading:  74%|███████▍  | 312M/420M [00:03<00:01, 107MB/s]
+Downloading:  77%|███████▋  | 322M/420M [00:03<00:00, 107MB/s]
+Downloading:  79%|███████▉  | 333M/420M [00:03<00:00, 107MB/s]
+Downloading:  82%|████████▏ | 343M/420M [00:03<00:00, 107MB/s]
+Downloading:  84%|████████▍ | 353M/420M [00:03<00:00, 107MB/s]
+Downloading:  87%|████████▋ | 364M/420M [00:03<00:00, 108MB/s]
+Downloading:  89%|████████▉ | 374M/420M [00:03<00:00, 108MB/s]
+Downloading:  91%|█████████▏| 384M/420M [00:03<00:00, 108MB/s]
+Downloading:  94%|█████████▍| 394M/420M [00:04<00:00, 107MB/s]
+Downloading:  96%|█████████▋| 405M/420M [00:04<00:00, 107MB/s]
+Downloading:  99%|█████████▉| 415M/420M [00:04<00:00, 108MB/s]
+Downloading: 100%|██████████| 420M/420M [00:04<00:00, 103MB/s]
+~~~TRAINING~~~
+
+Downloading:   0%|          | 0.00/226k [00:00<?, ?B/s]
+Downloading: 100%|██████████| 226k/226k [00:00<00:00, 2.52MB/s]
+
+Downloading:   0%|          | 0.00/48.0 [00:00<?, ?B/s]
+Downloading: 100%|██████████| 48.0/48.0 [00:00<00:00, 31.0kB/s]
+
+Downloading:   0%|          | 0.00/455k [00:00<?, ?B/s]
+Downloading:  44%|████▍     | 201k/455k [00:00<00:00, 1.15MB/s]
+Downloading: 100%|██████████| 455k/455k [00:00<00:00, 2.48MB/s]
+Traceback (most recent call last):
+  File "interface.py", line 40, in <module>
+    best = trainer.train(model)
+  File "/home/s2sakuri/Crossmodal-Entailment-1/trainer.py", line 21, in train
+    trainingData = nl.IndividualSequenceData(self.trainData)
+  File "/home/s2sakuri/Crossmodal-Entailment-1/loader.py", line 16, in __init__
+    with open("{}/objects_aois.json".format(self.baseDataPath)) as objectDict:
+FileNotFoundError: [Errno 2] No such file or directory: 'visual_genome_image_features/eyetrack//objects_aois.json'
+13/05/2025 22:08:50
+Mode: LSTM
+FF: 512
+Emb: 32
+Batch: 128
+LR: 0.0001
+Scaling: 500
+~~~TRAINING~~~
+Traceback (most recent call last):
+  File "interface.py", line 34, in <module>
+    best = trainer.train(model)
+  File "/home/s2sakuri/Crossmodal-Entailment-1/trainer.py", line 335, in train
+    trainingData = nl.EyeTrackFullData(self.trainData)
+  File "/home/s2sakuri/Crossmodal-Entailment-1/loader.py", line 181, in __init__
+    self.sequenceData = torch.load('{}latest_{}.pt'.format(self.baseDataPath,subset))
+  File "/home/s2sakuri/Crossmodal-Entailment-1/.conda/lib/python3.8/site-packages/torch/serialization.py", line 699, in load
+    with _open_file_like(f, 'rb') as opened_file:
+  File "/home/s2sakuri/Crossmodal-Entailment-1/.conda/lib/python3.8/site-packages/torch/serialization.py", line 231, in _open_file_like
+    return _open_file(name_or_buffer, mode)
+  File "/home/s2sakuri/Crossmodal-Entailment-1/.conda/lib/python3.8/site-packages/torch/serialization.py", line 212, in __init__
+    super(_open_file, self).__init__(open(name, mode))
+FileNotFoundError: [Errno 2] No such file or directory: 'visual_genome_image_features/eyetrack/latest_train.pt'
+13/05/2025 22:08:53
+Mode: Ensemble
+FF: 256
+Emb: 32
+Batch: 128
+LR: 0.0001
+Scaling: 500
+~~~TRAINING~~~
+Traceback (most recent call last):
+  File "interface.py", line 46, in <module>
+    best = trainer.train(model)
+  File "/home/s2sakuri/Crossmodal-Entailment-1/trainer.py", line 119, in train
+    trainingData = nl.EnsembleData(self.trainData)
+  File "/home/s2sakuri/Crossmodal-Entailment-1/loader.py", line 94, in __init__
+    with open("{}/objects_aois.json".format(self.baseDataPath)) as objectDict:
+FileNotFoundError: [Errno 2] No such file or directory: 'visual_genome_image_features/eyetrack//objects_aois.json'
+13/05/2025 22:09:01
+Mode: BIAS_IND
+FF: 128
+Emb: 16
+Batch: 16
+LR: 0.0001
+Scaling: 500
+~~~TRAINING~~~
+Traceback (most recent call last):
+  File "interface.py", line 52, in <module>
+    best = trainer.train(model)
+  File "/home/s2sakuri/Crossmodal-Entailment-1/trainer.py", line 238, in train
+    trainingData = nl.IndividualTransitionData(self.trainData)
+  File "/home/s2sakuri/Crossmodal-Entailment-1/loader.py", line 218, in __init__
+    with open("{}/objects_aois.json".format(self.baseDataPath)) as objectDict:
+FileNotFoundError: [Errno 2] No such file or directory: 'visual_genome_image_features/eyetrack//objects_aois.json'
+13/05/2025 22:11:46
+Mode: Transformer
+FF: 256
+Emb: 16
+Batch: 128
+LR: 0.0001
+Scaling: 500
+~~~TRAINING~~~
+Traceback (most recent call last):
+  File "interface.py", line 40, in <module>
+    best = trainer.train(model)
+  File "/home/s2sakuri/Crossmodal-Entailment-1/trainer.py", line 21, in train
+    trainingData = nl.IndividualSequenceData(self.trainData)
+  File "/home/s2sakuri/Crossmodal-Entailment-1/loader.py", line 16, in __init__
+    with open("{}/objects_aois.json".format(self.baseDataPath)) as objectDict:
+FileNotFoundError: [Errno 2] No such file or directory: 'visual_genome_image_features/eyetrack//objects_aois.json'
+13/05/2025 22:11:53
+Mode: LSTM
+FF: 512
+Emb: 32
+Batch: 128
+LR: 0.0001
+Scaling: 500
+~~~TRAINING~~~
+Traceback (most recent call last):
+  File "interface.py", line 34, in <module>
+    best = trainer.train(model)
+  File "/home/s2sakuri/Crossmodal-Entailment-1/trainer.py", line 335, in train
+    trainingData = nl.EyeTrackFullData(self.trainData)
+  File "/home/s2sakuri/Crossmodal-Entailment-1/loader.py", line 181, in __init__
+    self.sequenceData = torch.load('{}latest_{}.pt'.format(self.baseDataPath,subset))
+  File "/home/s2sakuri/Crossmodal-Entailment-1/.conda/lib/python3.8/site-packages/torch/serialization.py", line 699, in load
+    with _open_file_like(f, 'rb') as opened_file:
+  File "/home/s2sakuri/Crossmodal-Entailment-1/.conda/lib/python3.8/site-packages/torch/serialization.py", line 231, in _open_file_like
+    return _open_file(name_or_buffer, mode)
+  File "/home/s2sakuri/Crossmodal-Entailment-1/.conda/lib/python3.8/site-packages/torch/serialization.py", line 212, in __init__
+    super(_open_file, self).__init__(open(name, mode))
+FileNotFoundError: [Errno 2] No such file or directory: 'visual_genome_image_features/eyetrack/latest_train.pt'
+13/05/2025 22:11:57
+Mode: Ensemble
+FF: 256
+Emb: 32
+Batch: 128
+LR: 0.0001
+Scaling: 500
+~~~TRAINING~~~
+Traceback (most recent call last):
+  File "interface.py", line 46, in <module>
+    best = trainer.train(model)
+  File "/home/s2sakuri/Crossmodal-Entailment-1/trainer.py", line 119, in train
+    trainingData = nl.EnsembleData(self.trainData)
+  File "/home/s2sakuri/Crossmodal-Entailment-1/loader.py", line 94, in __init__
+    with open("{}/objects_aois.json".format(self.baseDataPath)) as objectDict:
+FileNotFoundError: [Errno 2] No such file or directory: 'visual_genome_image_features/eyetrack//objects_aois.json'
+13/05/2025 22:12:05
+Mode: BIAS_IND
+FF: 128
+Emb: 16
+Batch: 16
+LR: 0.0001
+Scaling: 500
+~~~TRAINING~~~
+Traceback (most recent call last):
+  File "interface.py", line 52, in <module>
+    best = trainer.train(model)
+  File "/home/s2sakuri/Crossmodal-Entailment-1/trainer.py", line 238, in train
+    trainingData = nl.IndividualTransitionData(self.trainData)
+  File "/home/s2sakuri/Crossmodal-Entailment-1/loader.py", line 218, in __init__
+    with open("{}/objects_aois.json".format(self.baseDataPath)) as objectDict:
+FileNotFoundError: [Errno 2] No such file or directory: 'visual_genome_image_features/eyetrack//objects_aois.json'
+13/05/2025 22:28:06
+Mode: Transformer
+FF: 256
+Emb: 16
+Batch: 128
+LR: 0.0001
+Scaling: 500
+~~~TRAINING~~~
+Traceback (most recent call last):
+  File "interface.py", line 40, in <module>
+    best = trainer.train(model)
+  File "/home/s2sakuri/Crossmodal-Entailment-1/trainer.py", line 21, in train
+    trainingData = nl.IndividualSequenceData(self.trainData)
+  File "/home/s2sakuri/Crossmodal-Entailment-1/loader.py", line 16, in __init__
+    with open("{}/objects_aois.json".format(self.baseDataPath)) as objectDict:
+FileNotFoundError: [Errno 2] No such file or directory: 'visual_genome_image_features/eyetrack//objects_aois.json'
+13/05/2025 22:28:14
+Mode: LSTM
+FF: 512
+Emb: 32
+Batch: 128
+LR: 0.0001
+Scaling: 500
+~~~TRAINING~~~
+Traceback (most recent call last):
+  File "interface.py", line 34, in <module>
+    best = trainer.train(model)
+  File "/home/s2sakuri/Crossmodal-Entailment-1/trainer.py", line 335, in train
+    trainingData = nl.EyeTrackFullData(self.trainData)
+  File "/home/s2sakuri/Crossmodal-Entailment-1/loader.py", line 181, in __init__
+    self.sequenceData = torch.load('{}latest_{}.pt'.format(self.baseDataPath,subset))
+  File "/home/s2sakuri/Crossmodal-Entailment-1/.conda/lib/python3.8/site-packages/torch/serialization.py", line 699, in load
+    with _open_file_like(f, 'rb') as opened_file:
+  File "/home/s2sakuri/Crossmodal-Entailment-1/.conda/lib/python3.8/site-packages/torch/serialization.py", line 231, in _open_file_like
+    return _open_file(name_or_buffer, mode)
+  File "/home/s2sakuri/Crossmodal-Entailment-1/.conda/lib/python3.8/site-packages/torch/serialization.py", line 212, in __init__
+    super(_open_file, self).__init__(open(name, mode))
+FileNotFoundError: [Errno 2] No such file or directory: 'visual_genome_image_features/eyetrack/latest_train.pt'
+13/05/2025 22:28:17
+Mode: Ensemble
+FF: 256
+Emb: 32
+Batch: 128
+LR: 0.0001
+Scaling: 500
+~~~TRAINING~~~
+Traceback (most recent call last):
+  File "interface.py", line 46, in <module>
+    best = trainer.train(model)
+  File "/home/s2sakuri/Crossmodal-Entailment-1/trainer.py", line 119, in train
+    trainingData = nl.EnsembleData(self.trainData)
+  File "/home/s2sakuri/Crossmodal-Entailment-1/loader.py", line 94, in __init__
+    with open("{}/objects_aois.json".format(self.baseDataPath)) as objectDict:
+FileNotFoundError: [Errno 2] No such file or directory: 'visual_genome_image_features/eyetrack//objects_aois.json'
+13/05/2025 22:28:26
+Mode: BIAS_IND
+FF: 128
+Emb: 16
+Batch: 16
+LR: 0.0001
+Scaling: 500
+~~~TRAINING~~~
+Traceback (most recent call last):
+  File "interface.py", line 52, in <module>
+    best = trainer.train(model)
+  File "/home/s2sakuri/Crossmodal-Entailment-1/trainer.py", line 238, in train
+    trainingData = nl.IndividualTransitionData(self.trainData)
+  File "/home/s2sakuri/Crossmodal-Entailment-1/loader.py", line 218, in __init__
+    with open("{}/objects_aois.json".format(self.baseDataPath)) as objectDict:
+FileNotFoundError: [Errno 2] No such file or directory: 'visual_genome_image_features/eyetrack//objects_aois.json'
+13/05/2025 22:31:49
+Mode: Transformer
+FF: 256
+Emb: 16
+Batch: 128
+LR: 0.0001
+Scaling: 500
+~~~TRAINING~~~
+Traceback (most recent call last):
+  File "interface.py", line 40, in <module>
+    best = trainer.train(model)
+  File "/home/s2sakuri/Crossmodal-Entailment-1/trainer.py", line 21, in train
+    trainingData = nl.IndividualSequenceData(self.trainData)
+  File "/home/s2sakuri/Crossmodal-Entailment-1/loader.py", line 16, in __init__
+    with open("{}/objects_aois.json".format(self.baseDataPath)) as objectDict:
+FileNotFoundError: [Errno 2] No such file or directory: 'visual_genome_image_features/eyetrack/objects_aois.json'
+13/05/2025 22:31:56
+Mode: LSTM
+FF: 512
+Emb: 32
+Batch: 128
+LR: 0.0001
+Scaling: 500
+~~~TRAINING~~~
+Traceback (most recent call last):
+  File "interface.py", line 34, in <module>
+    best = trainer.train(model)
+  File "/home/s2sakuri/Crossmodal-Entailment-1/trainer.py", line 335, in train
+    trainingData = nl.EyeTrackFullData(self.trainData)
+  File "/home/s2sakuri/Crossmodal-Entailment-1/loader.py", line 181, in __init__
+    self.sequenceData = torch.load('{}latest_{}.pt'.format(self.baseDataPath,subset))
+  File "/home/s2sakuri/Crossmodal-Entailment-1/.conda/lib/python3.8/site-packages/torch/serialization.py", line 699, in load
+    with _open_file_like(f, 'rb') as opened_file:
+  File "/home/s2sakuri/Crossmodal-Entailment-1/.conda/lib/python3.8/site-packages/torch/serialization.py", line 231, in _open_file_like
+    return _open_file(name_or_buffer, mode)
+  File "/home/s2sakuri/Crossmodal-Entailment-1/.conda/lib/python3.8/site-packages/torch/serialization.py", line 212, in __init__
+    super(_open_file, self).__init__(open(name, mode))
+FileNotFoundError: [Errno 2] No such file or directory: 'visual_genome_image_features/eyetrack/latest_train.pt'
+13/05/2025 22:32:00
+Mode: Ensemble
+FF: 256
+Emb: 32
+Batch: 128
+LR: 0.0001
+Scaling: 500
+~~~TRAINING~~~
+Traceback (most recent call last):
+  File "interface.py", line 46, in <module>
+    best = trainer.train(model)
+  File "/home/s2sakuri/Crossmodal-Entailment-1/trainer.py", line 119, in train
+    trainingData = nl.EnsembleData(self.trainData)
+  File "/home/s2sakuri/Crossmodal-Entailment-1/loader.py", line 94, in __init__
+    with open("{}/objects_aois.json".format(self.baseDataPath)) as objectDict:
+FileNotFoundError: [Errno 2] No such file or directory: 'visual_genome_image_features/eyetrack//objects_aois.json'
+13/05/2025 22:32:08
+Mode: BIAS_IND
+FF: 128
+Emb: 16
+Batch: 16
+LR: 0.0001
+Scaling: 500
+~~~TRAINING~~~
+Traceback (most recent call last):
+  File "interface.py", line 52, in <module>
+    best = trainer.train(model)
+  File "/home/s2sakuri/Crossmodal-Entailment-1/trainer.py", line 238, in train
+    trainingData = nl.IndividualTransitionData(self.trainData)
+  File "/home/s2sakuri/Crossmodal-Entailment-1/loader.py", line 218, in __init__
+    with open("{}/objects_aois.json".format(self.baseDataPath)) as objectDict:
+FileNotFoundError: [Errno 2] No such file or directory: 'visual_genome_image_features/eyetrack//objects_aois.json'
+13/05/2025 22:33:47
+Mode: Transformer
+FF: 256
+Emb: 16
+Batch: 128
+LR: 0.0001
+Scaling: 500
+~~~TRAINING~~~
+Traceback (most recent call last):
+  File "interface.py", line 40, in <module>
+    best = trainer.train(model)
+  File "/home/s2sakuri/Crossmodal-Entailment-1/trainer.py", line 21, in train
+    trainingData = nl.IndividualSequenceData(self.trainData)
+  File "/home/s2sakuri/Crossmodal-Entailment-1/loader.py", line 16, in __init__
+    with open("{}/objects_aois.json".format(self.baseDataPath)) as objectDict:
+FileNotFoundError: [Errno 2] No such file or directory: 'visual_genome_image_features/eyetrack/objects_aois.json'
+13/05/2025 22:33:54
+Mode: LSTM
+FF: 512
+Emb: 32
+Batch: 128
+LR: 0.0001
+Scaling: 500
+~~~TRAINING~~~
+Traceback (most recent call last):
+  File "interface.py", line 34, in <module>
+    best = trainer.train(model)
+  File "/home/s2sakuri/Crossmodal-Entailment-1/trainer.py", line 335, in train
+    trainingData = nl.EyeTrackFullData(self.trainData)
+  File "/home/s2sakuri/Crossmodal-Entailment-1/loader.py", line 181, in __init__
+    self.sequenceData = torch.load('{}latest_{}.pt'.format(self.baseDataPath,subset))
+  File "/home/s2sakuri/Crossmodal-Entailment-1/.conda/lib/python3.8/site-packages/torch/serialization.py", line 699, in load
+    with _open_file_like(f, 'rb') as opened_file:
+  File "/home/s2sakuri/Crossmodal-Entailment-1/.conda/lib/python3.8/site-packages/torch/serialization.py", line 231, in _open_file_like
+    return _open_file(name_or_buffer, mode)
+  File "/home/s2sakuri/Crossmodal-Entailment-1/.conda/lib/python3.8/site-packages/torch/serialization.py", line 212, in __init__
+    super(_open_file, self).__init__(open(name, mode))
+FileNotFoundError: [Errno 2] No such file or directory: 'visual_genome_image_features/eyetrack/latest_train.pt'
+13/05/2025 22:33:58
+Mode: Ensemble
+FF: 256
+Emb: 32
+Batch: 128
+LR: 0.0001
+Scaling: 500
+~~~TRAINING~~~
+Traceback (most recent call last):
+  File "interface.py", line 46, in <module>
+    best = trainer.train(model)
+  File "/home/s2sakuri/Crossmodal-Entailment-1/trainer.py", line 119, in train
+    trainingData = nl.EnsembleData(self.trainData)
+  File "/home/s2sakuri/Crossmodal-Entailment-1/loader.py", line 94, in __init__
+    with open("{}/objects_aois.json".format(self.baseDataPath)) as objectDict:
+FileNotFoundError: [Errno 2] No such file or directory: 'visual_genome_image_features/eyetrack/objects_aois.json'
+13/05/2025 22:34:06
+Mode: BIAS_IND
+FF: 128
+Emb: 16
+Batch: 16
+LR: 0.0001
+Scaling: 500
+~~~TRAINING~~~
+Traceback (most recent call last):
+  File "interface.py", line 52, in <module>
+    best = trainer.train(model)
+  File "/home/s2sakuri/Crossmodal-Entailment-1/trainer.py", line 238, in train
+    trainingData = nl.IndividualTransitionData(self.trainData)
+  File "/home/s2sakuri/Crossmodal-Entailment-1/loader.py", line 218, in __init__
+    with open("{}/objects_aois.json".format(self.baseDataPath)) as objectDict:
+FileNotFoundError: [Errno 2] No such file or directory: 'visual_genome_image_features/eyetrack/objects_aois.json'
+Mode: BIAS_IND
+FF: 128
+Emb: 16
+Batch: 16
+LR: 0.0001
+Scaling: 500
+~~~TRAINING~~~
+EPOCH: 1
+Loss: 1.006214553117752
+	Eval Loss: 0.8274892396397061
+EPOCH: 2
+Loss: 0.8774384017084159
+	Eval Loss: 0.8631306171417237
+EPOCH: 3
+Loss: 0.8294369644978468
+	Eval Loss: 0.7828479985396067
+EPOCH: 4
+Loss: 0.7835566673793045
+	Eval Loss: 0.7584979746076795
+EPOCH: 5
+Loss: 0.7855475602196712
+	Eval Loss: 0.7620561142762502
+EPOCH: 6
+Loss: 0.76844188144394
+	Eval Loss: 0.7350359506077236
+EPOCH: 7
+Loss: 0.7650211212681789
+	Eval Loss: 0.729290246963501
+EPOCH: 8
+Loss: 0.7610890390826207
+	Eval Loss: 0.7343807995319367
+EPOCH: 9
+Loss: 0.7407965426351509
+	Eval Loss: 0.7360016703605652
+EPOCH: 10
+Loss: 0.7272364734434614
+	Eval Loss: 0.708163481288486
+EPOCH: 11
+Loss: 0.7313820185614567
+	Eval Loss: 0.7229303333494398
+EPOCH: 12
+Loss: 0.7204190874800963
+	Eval Loss: 0.7407326208220588
+EPOCH: 13
+Loss: 0.7162081805514354
+	Eval Loss: 0.7396978477636973
+EPOCH: 14
+Loss: 0.7092190464337667
+	Eval Loss: 0.7255815201335483
+EPOCH: 15
+Loss: 0.7082153589117761
+	Eval Loss: 0.693977087073856
+EPOCH: 16
+Loss: 0.7037095314147426
+	Eval Loss: 0.6800065596898397
+EPOCH: 17
+Loss: 0.6855801841791939
+	Eval Loss: 0.7050644516944885
+EPOCH: 18
+Loss: 0.6900152235638861
+	Eval Loss: 0.7092625286844042
+EPOCH: 19
+Loss: 0.6841830072449703
+	Eval Loss: 0.6898422446515825
+EPOCH: 20
+Loss: 0.6769928433147131
+	Eval Loss: 0.7243358347151014
+EPOCH: 21
+Loss: 0.6677277285678714
+	Eval Loss: 0.6666062480873531
+EPOCH: 22
+Loss: 0.6560605119256412
+	Eval Loss: 0.6490148040983412
+EPOCH: 23
+Loss: 0.6509503818025776
+	Eval Loss: 0.6640427788098653
+EPOCH: 24
+Loss: 0.6520443702445311
+	Eval Loss: 0.6689941379759047
+EPOCH: 25
+Loss: 0.6477586801145591
+	Eval Loss: 0.6813639382521312
+EPOCH: 26
+Loss: 0.6468839444366156
+	Eval Loss: 0.6480161329110463
+EPOCH: 27
+Loss: 0.6370622045853559
+	Eval Loss: 0.6840213020642598
+EPOCH: 28
+Loss: 0.6320742259422938
+	Eval Loss: 0.6464744177129533
+EPOCH: 29
+Loss: 0.6303082077526578
+	Eval Loss: 0.6741307066546546
+EPOCH: 30
+Loss: 0.6294725296544094
+	Eval Loss: 0.6479658676518334
+Best Model in Epoch 28 @ 0.6464744177129533
+Test ACC: 0.7728758454322815
+13/05/2025 23:08:41
+Traceback (most recent call last):
+  File "/home/s2sakuri/Crossmodal-Entailment-1/interface.py", line 1, in <module>
+    import torch
+ModuleNotFoundError: No module named 'torch'
+14/05/2025 10:13:23
+Mode: Transformer
+FF: 256
+Emb: 16
+Batch: 128
+LR: 0.0001
+Scaling: 500
+~~~TRAINING~~~
+EPOCH: 1
+Loss: 1.1783050000667572
+	Eval Loss: 0.8988758524258932
+EPOCH: 2
+Loss: 0.9274602383375168
+	Eval Loss: 0.8697923024495443
+EPOCH: 3
+Loss: 0.8784077614545822
+	Eval Loss: 0.8084616859753927
+EPOCH: 4
+Loss: 0.83589150570333
+	Eval Loss: 0.7909524738788605
+EPOCH: 5
+Loss: 0.8115167170763016
+	Eval Loss: 0.797434667746226
+EPOCH: 6
+Loss: 0.8131814748048782
+	Eval Loss: 0.7533027033011118
+EPOCH: 7
+Loss: 0.7824140563607216
+	Eval Loss: 0.7641207079092661
+EPOCH: 8
+Loss: 0.7611342258751392
+	Eval Loss: 0.7577610313892365
+EPOCH: 9
+Loss: 0.7563685681670904
+	Eval Loss: 0.76652925213178
+EPOCH: 10
+Loss: 0.7573780082166195
+	Eval Loss: 0.7334692776203156
+EPOCH: 11
+Loss: 0.7416171319782734
+	Eval Loss: 0.756466805934906
+EPOCH: 12
+Loss: 0.7478806767612696
+	Eval Loss: 0.7499096294244131
+EPOCH: 13
+Loss: 0.7314998097717762
+	Eval Loss: 0.7515908181667328
+EPOCH: 14
+Loss: 0.7379798032343388
+	Eval Loss: 0.7628847857316335
+EPOCH: 15
+Loss: 0.7350817155092955
+	Eval Loss: 0.7187994221846262
+EPOCH: 16
+Loss: 0.7312943879514933
+	Eval Loss: 0.7241448362668356
+EPOCH: 17
+Loss: 0.7249782532453537
+	Eval Loss: 0.723075658082962
+EPOCH: 18
+Loss: 0.7285887189209461
+	Eval Loss: 0.7194552620251974
+EPOCH: 19
+Loss: 0.7116600181907415
+	Eval Loss: 0.7656765977541605
+EPOCH: 20
+Loss: 0.7131474912166595
+	Eval Loss: 0.7254201571146647
+EPOCH: 21
+Loss: 0.712979219853878
+	Eval Loss: 0.7459993660449982
+EPOCH: 22
+Loss: 0.7120728641748428
+	Eval Loss: 0.7298352221647898
+EPOCH: 23
+Loss: 0.7067483868449926
+	Eval Loss: 0.7400640745957693
+EPOCH: 24
+Loss: 0.7072364017367363
+	Eval Loss: 0.7178916732470194
+EPOCH: 25
+Loss: 0.7042516823858023
+	Eval Loss: 0.7235706150531769
+EPOCH: 26
+Loss: 0.7028745133429766
+	Eval Loss: 0.7050956984361013
+EPOCH: 27
+Loss: 0.7004217933863401
+	Eval Loss: 0.7200522422790527
+EPOCH: 28
+Loss: 0.6925915591418743
+	Eval Loss: 0.7240213255087534
+EPOCH: 29
+Loss: 0.6879453640431166
+	Eval Loss: 0.7506060798962911
+EPOCH: 30
+Loss: 0.7012248579412699
+	Eval Loss: 0.7255004346370697
+Best Model in Epoch 26 @ 0.7050956984361013
+Test ACC: 0.7336601614952087
+14/05/2025 10:18:39
+14/05/2025 10:18:41
+Mode: LSTM
+FF: 512
+Emb: 32
+Batch: 128
+LR: 0.0001
+Scaling: 500
+~~~TRAINING~~~
+EPOCH: 1
+Loss: 1.1313615217804909
+	Eval Loss: 1.0964227318763733
+EPOCH: 2
+Loss: 1.0679343305528164
+	Eval Loss: 1.0358071724573772
+EPOCH: 3
+Loss: 1.0133920554071665
+	Eval Loss: 0.9756163756052653
+EPOCH: 4
+Loss: 0.9621489159762859
+	Eval Loss: 0.9164340297381083
+EPOCH: 5
+Loss: 0.9143485017120838
+	Eval Loss: 0.8630863527456919
+EPOCH: 6
+Loss: 0.8732643686234951
+	Eval Loss: 0.8246652881304423
+EPOCH: 7
+Loss: 0.8494846299290657
+	Eval Loss: 0.7998132507006327
+EPOCH: 8
+Loss: 0.8397900126874447
+	Eval Loss: 0.7957978546619415
+EPOCH: 9
+Loss: 0.8323783669620752
+	Eval Loss: 0.7823519011338552
+EPOCH: 10
+Loss: 0.8278492353856564
+	Eval Loss: 0.7788000901540121
+EPOCH: 11
+Loss: 0.8217201754450798
+	Eval Loss: 0.7856330176194509
+EPOCH: 12
+Loss: 0.8152463939040899
+	Eval Loss: 0.7728545765082041
+EPOCH: 13
+Loss: 0.8066492658108473
+	Eval Loss: 0.766468733549118
+EPOCH: 14
+Loss: 0.7989689353853464
+	Eval Loss: 0.7713675002257029
+EPOCH: 15
+Loss: 0.7892267163842916
+	Eval Loss: 0.7661818861961365
+EPOCH: 16
+Loss: 0.7767026256769896
+	Eval Loss: 0.7608963350454966
+EPOCH: 17
+Loss: 0.7657493408769369
+	Eval Loss: 0.737798015276591
+EPOCH: 18
+Loss: 0.75254618935287
+	Eval Loss: 0.7419669727484385
+EPOCH: 19
+Loss: 0.7394654713571072
+	Eval Loss: 0.7409580945968628
+EPOCH: 20
+Loss: 0.7250155080109835
+	Eval Loss: 0.7289410928885142
+EPOCH: 21
+Loss: 0.7117780838161707
+	Eval Loss: 0.723990797996521
+EPOCH: 22
+Loss: 0.6964580044150352
+	Eval Loss: 0.7051270008087158
+EPOCH: 23
+Loss: 0.6832302194088697
+	Eval Loss: 0.6947333216667175
+EPOCH: 24
+Loss: 0.6696350667625666
+	Eval Loss: 0.6876343886057535
+EPOCH: 25
+Loss: 0.6563408747315407
+	Eval Loss: 0.6900559465090433
+EPOCH: 26
+Loss: 0.6457128841429949
+	Eval Loss: 0.6799740294615427
+EPOCH: 27
+Loss: 0.6332079041749239
+	Eval Loss: 0.667034367720286
+EPOCH: 28
+Loss: 0.6247217999771237
+	Eval Loss: 0.670705238978068
+EPOCH: 29
+Loss: 0.6160802617669106
+	Eval Loss: 0.6626852750778198
+EPOCH: 30
+Loss: 0.6081692343577743
+	Eval Loss: 0.6747650901476542
+Best Model in Epoch 29 @ 0.6626852750778198
+Test ACC: 0.7467320561408997
+14/05/2025 10:20:49
+14/05/2025 10:20:50
+Mode: Ensemble
+FF: 256
+Emb: 32
+Batch: 128
+LR: 0.0001
+Scaling: 500
+~~~TRAINING~~~
+EPOCH: 1
+Loss: 0.9542107935994864
+	Eval Loss: 0.8339285254478455
+EPOCH: 2
+Loss: 0.8414047881960869
+	Eval Loss: 0.762571374575297
+EPOCH: 3
+Loss: 0.7961813379079103
+	Eval Loss: 0.7763150334358215
+EPOCH: 4
+Loss: 0.7607005462050438
+	Eval Loss: 0.7609735727310181
+EPOCH: 5
+Loss: 0.7491439115256071
+	Eval Loss: 0.73972420891126
+EPOCH: 6
+Loss: 0.7366002444177866
+	Eval Loss: 0.736371765534083
+EPOCH: 7
+Loss: 0.7356744091957808
+	Eval Loss: 0.7270439863204956
+EPOCH: 8
+Loss: 0.7211956772953272
+	Eval Loss: 0.7207045455773672
+EPOCH: 9
+Loss: 0.7166734375059605
+	Eval Loss: 0.755861759185791
+EPOCH: 10
+Loss: 0.7175771687179804
+	Eval Loss: 0.7307570079962412
+EPOCH: 11
+Loss: 0.7022805102169514
+	Eval Loss: 0.7008666197458903
+EPOCH: 12
+Loss: 0.6963424514979124
+	Eval Loss: 0.70001753171285
+EPOCH: 13
+Loss: 0.6998702622950077
+	Eval Loss: 0.7086196541786194
+EPOCH: 14
+Loss: 0.6868111677467823
+	Eval Loss: 0.7106761236985525
+EPOCH: 15
+Loss: 0.688562324270606
+	Eval Loss: 0.6822585066159567
+EPOCH: 16
+Loss: 0.6836434584110975
+	Eval Loss: 0.7328919668992361
+EPOCH: 17
+Loss: 0.6658395770937204
+	Eval Loss: 0.663416584332784
+EPOCH: 18
+Loss: 0.6543786805123091
+	Eval Loss: 0.7011715670426687
+EPOCH: 19
+Loss: 0.6324206981807947
+	Eval Loss: 0.6773058275381724
+EPOCH: 20
+Loss: 0.6199592854827642
+	Eval Loss: 0.6716383198897043
+EPOCH: 21
+Loss: 0.6165350088849664
+	Eval Loss: 0.6489788095156351
+EPOCH: 22
+Loss: 0.6096247406676412
+	Eval Loss: 0.6486800909042358
+EPOCH: 23
+Loss: 0.6083718212321401
+	Eval Loss: 0.6661711831887563
+EPOCH: 24
+Loss: 0.5979674179106951
+	Eval Loss: 0.6733331183592478
+EPOCH: 25
+Loss: 0.5948532857000828
+	Eval Loss: 0.6405266374349594
+EPOCH: 26
+Loss: 0.581378978677094
+	Eval Loss: 0.6473801732063293
+EPOCH: 27
+Loss: 0.578635853715241
+	Eval Loss: 0.6505101422468821
+EPOCH: 28
+Loss: 0.5787531901150942
+	Eval Loss: 0.6564319928487142
+EPOCH: 29
+Loss: 0.5714204236865044
+	Eval Loss: 0.6472693582375845
+EPOCH: 30
+Loss: 0.565039181150496
+	Eval Loss: 0.6584210892518362
+Best Model in Epoch 25 @ 0.6405266374349594
+Test ACC: 0.7728758454322815
+~~~TRAINING~~~
+EPOCH: 1
+Loss: 0.9230554327368736
+	Eval Loss: 0.8221973280111948
+EPOCH: 2
+Loss: 0.849180206656456
+	Eval Loss: 0.7850980758666992
+EPOCH: 3
+Loss: 0.8043810073286295
+	Eval Loss: 0.7538496355215708
+EPOCH: 4
+Loss: 0.7747990470379591
+	Eval Loss: 0.733605702718099
+EPOCH: 5
+Loss: 0.7466357816010714
+	Eval Loss: 0.7320812145868937
+EPOCH: 6
+Loss: 0.7328119538724422
+	Eval Loss: 0.7214308480421702
+EPOCH: 7
+Loss: 0.7292500585317612
+	Eval Loss: 0.7151040534178416
+EPOCH: 8
+Loss: 0.7119516227394342
+	Eval Loss: 0.7116335928440094
+EPOCH: 9
+Loss: 0.7127689346671104
+	Eval Loss: 0.73004549741745
+EPOCH: 10
+Loss: 0.7073655650019646
+	Eval Loss: 0.7124735315640768
+EPOCH: 11
+Loss: 0.7173186149448156
+	Eval Loss: 0.6994192699591318
+EPOCH: 12
+Loss: 0.6927312780171633
+	Eval Loss: 0.710612157980601
+EPOCH: 13
+Loss: 0.7001814525574446
+	Eval Loss: 0.7019633452097574
+EPOCH: 14
+Loss: 0.6868565641343594
+	Eval Loss: 0.7014110088348389
+EPOCH: 15
+Loss: 0.6827952656894922
+	Eval Loss: 0.6934187412261963
+EPOCH: 16
+Loss: 0.6694963779300451
+	Eval Loss: 0.7128522197405497
+EPOCH: 17
+Loss: 0.6650609858334064
+	Eval Loss: 0.6674749950567881
+EPOCH: 18
+Loss: 0.638481555506587
+	Eval Loss: 0.6604546904563904
+EPOCH: 19
+Loss: 0.622402049601078
+	Eval Loss: 0.628309428691864
+EPOCH: 20
+Loss: 0.6205500373616815
+	Eval Loss: 0.6662836968898773
+EPOCH: 21
+Loss: 0.6138787688687444
+	Eval Loss: 0.6527906258900961
+EPOCH: 22
+Loss: 0.612020356580615
+	Eval Loss: 0.654495378335317
+EPOCH: 23
+Loss: 0.5994399320334196
+	Eval Loss: 0.639717161655426
+EPOCH: 24
+Loss: 0.6010633837431669
+	Eval Loss: 0.6610998610655466
+EPOCH: 25
+Loss: 0.5970170265063643
+	Eval Loss: 0.6559139688809713
+EPOCH: 26
+Loss: 0.5890826676040888
+	Eval Loss: 0.6512958407402039
+EPOCH: 27
+Loss: 0.5819353628903627
+	Eval Loss: 0.6721631983915964
+EPOCH: 28
+Loss: 0.5903395330533385
+	Eval Loss: 0.6371813813845316
+EPOCH: 29
+Loss: 0.574252225458622
+	Eval Loss: 0.646882583697637
+EPOCH: 30
+Loss: 0.5763994846493006
+	Eval Loss: 0.6481993496417999
+Best Model in Epoch 19 @ 0.628309428691864
+Test ACC: 0.7549019455909729
+14/05/2025 10:34:01
+14/05/2025 10:34:02
+Mode: BIAS_IND
+FF: 128
+Emb: 16
+Batch: 16
+LR: 0.0001
+Scaling: 500
+~~~TRAINING~~~
+EPOCH: 1
+Loss: 1.006214553117752
+	Eval Loss: 0.8274892396397061
+EPOCH: 2
+Loss: 0.8774384017084159
+	Eval Loss: 0.8631306171417237
+EPOCH: 3
+Loss: 0.8294369644978468
+	Eval Loss: 0.7828479985396067
+EPOCH: 4
+Loss: 0.7835566673793045
+	Eval Loss: 0.7584979746076795
+EPOCH: 5
+Loss: 0.7855475602196712
+	Eval Loss: 0.7620561142762502
+EPOCH: 6
+Loss: 0.76844188144394
+	Eval Loss: 0.7350359506077236
+EPOCH: 7
+Loss: 0.7650211212681789
+	Eval Loss: 0.729290246963501
+EPOCH: 8
+Loss: 0.7610890390826207
+	Eval Loss: 0.7343807995319367
+EPOCH: 9
+Loss: 0.7407965426351509
+	Eval Loss: 0.7360016703605652
+EPOCH: 10
+Loss: 0.7272364734434614
+	Eval Loss: 0.708163481288486
+EPOCH: 11
+Loss: 0.7313820185614567
+	Eval Loss: 0.7229303333494398
+EPOCH: 12
+Loss: 0.7204190874800963
+	Eval Loss: 0.7407326208220588
+EPOCH: 13
+Loss: 0.7162081805514354
+	Eval Loss: 0.7396978477636973
+EPOCH: 14
+Loss: 0.7092190464337667
+	Eval Loss: 0.7255815201335483
+EPOCH: 15
+Loss: 0.7082153589117761
+	Eval Loss: 0.693977087073856
+EPOCH: 16
+Loss: 0.7037095314147426
+	Eval Loss: 0.6800065596898397
+EPOCH: 17
+Loss: 0.6855801841791939
+	Eval Loss: 0.7050644516944885
+EPOCH: 18
+Loss: 0.6900152235638861
+	Eval Loss: 0.7092625286844042
+EPOCH: 19
+Loss: 0.6841830072449703
+	Eval Loss: 0.6898422446515825
+EPOCH: 20
+Loss: 0.6769928433147131
+	Eval Loss: 0.7243358347151014
+EPOCH: 21
+Loss: 0.6677277285678714
+	Eval Loss: 0.6666062480873531
+EPOCH: 22
+Loss: 0.6560605119256412
+	Eval Loss: 0.6490148040983412
+EPOCH: 23
+Loss: 0.6509503818025776
+	Eval Loss: 0.6640427788098653
+EPOCH: 24
+Loss: 0.6520443702445311
+	Eval Loss: 0.6689941379759047
+EPOCH: 25
+Loss: 0.6477586801145591
+	Eval Loss: 0.6813639382521312
+EPOCH: 26
+Loss: 0.6468839444366156
+	Eval Loss: 0.6480161329110463
+EPOCH: 27
+Loss: 0.6370622045853559
+	Eval Loss: 0.6840213020642598
+EPOCH: 28
+Loss: 0.6320742259422938
+	Eval Loss: 0.6464744177129533
+EPOCH: 29
+Loss: 0.6303082077526578
+	Eval Loss: 0.6741307066546546
+EPOCH: 30
+Loss: 0.6294725296544094
+	Eval Loss: 0.6479658676518334
+Best Model in Epoch 28 @ 0.6464744177129533
+Test ACC: 0.7728758454322815
+14/05/2025 10:49:40
+Traceback (most recent call last):
+  File "/home/s2sakuri/Crossmodal-Entailment-1/interface.py", line 1, in <module>
+    import torch
+ModuleNotFoundError: No module named 'torch'
+Traceback (most recent call last):
+  File "/home/s2sakuri/Crossmodal-Entailment-1/interface.py", line 1, in <module>
+    import torch
+ModuleNotFoundError: No module named 'torch'
+Traceback (most recent call last):
+  File "/home/s2sakuri/Crossmodal-Entailment-1/interface.py", line 1, in <module>
+    import torch
+ModuleNotFoundError: No module named 'torch'
+Traceback (most recent call last):
+  File "/home/s2sakuri/Crossmodal-Entailment-1/interface.py", line 1, in <module>
+    import torch
+ModuleNotFoundError: No module named 'torch'
+Traceback (most recent call last):
+  File "/home/s2sakuri/Crossmodal-Entailment-1/interface.py", line 1, in <module>
+    import torch
+ModuleNotFoundError: No module named 'torch'
+Traceback (most recent call last):
+  File "/home/s2sakuri/Crossmodal-Entailment-1/interface.py", line 1, in <module>
+    import torch
+ModuleNotFoundError: No module named 'torch'
+Traceback (most recent call last):
+  File "/home/s2sakuri/Crossmodal-Entailment-1/interface.py", line 1, in <module>
+    import torch
+ModuleNotFoundError: No module named 'torch'
+Traceback (most recent call last):
+  File "/home/s2sakuri/Crossmodal-Entailment-1/interface.py", line 1, in <module>
+    import torch
+ModuleNotFoundError: No module named 'torch'
+Traceback (most recent call last):
+  File "/home/s2sakuri/Crossmodal-Entailment-1/interface.py", line 1, in <module>
+    import torch
+ModuleNotFoundError: No module named 'torch'
+Traceback (most recent call last):
+  File "/home/s2sakuri/Crossmodal-Entailment-1/interface.py", line 1, in <module>
+    import torch
+ModuleNotFoundError: No module named 'torch'
+Traceback (most recent call last):
+  File "/home/s2sakuri/Crossmodal-Entailment-1/interface.py", line 1, in <module>
+    import torch
+ModuleNotFoundError: No module named 'torch'
+Traceback (most recent call last):
+  File "/home/s2sakuri/Crossmodal-Entailment-1/interface.py", line 1, in <module>
+    import torch
+ModuleNotFoundError: No module named 'torch'
+Traceback (most recent call last):
+  File "/home/s2sakuri/Crossmodal-Entailment-1/interface.py", line 1, in <module>
+    import torch
+ModuleNotFoundError: No module named 'torch'
+Traceback (most recent call last):
+  File "/home/s2sakuri/Crossmodal-Entailment-1/interface.py", line 1, in <module>
+    import torch
+ModuleNotFoundError: No module named 'torch'
+Traceback (most recent call last):
+  File "/home/s2sakuri/Crossmodal-Entailment-1/interface.py", line 1, in <module>
+    import torch
+ModuleNotFoundError: No module named 'torch'
+Traceback (most recent call last):
+  File "/home/s2sakuri/Crossmodal-Entailment-1/interface.py", line 1, in <module>
+    import torch
+ModuleNotFoundError: No module named 'torch'
+Traceback (most recent call last):
+  File "/home/s2sakuri/Crossmodal-Entailment-1/interface.py", line 1, in <module>
+    import torch
+ModuleNotFoundError: No module named 'torch'
+Traceback (most recent call last):
+  File "/home/s2sakuri/Crossmodal-Entailment-1/interface.py", line 1, in <module>
+    import torch
+ModuleNotFoundError: No module named 'torch'
+Traceback (most recent call last):
+  File "/home/s2sakuri/Crossmodal-Entailment-1/interface.py", line 1, in <module>
+    import torch
+ModuleNotFoundError: No module named 'torch'
+Traceback (most recent call last):
+  File "/home/s2sakuri/Crossmodal-Entailment-1/interface.py", line 1, in <module>
+    import torch
+ModuleNotFoundError: No module named 'torch'
+Traceback (most recent call last):
+  File "/home/s2sakuri/Crossmodal-Entailment-1/interface.py", line 1, in <module>
+    import torch
+ModuleNotFoundError: No module named 'torch'
+Traceback (most recent call last):
+  File "/home/s2sakuri/Crossmodal-Entailment-1/interface.py", line 1, in <module>
+    import torch
+ModuleNotFoundError: No module named 'torch'
+Traceback (most recent call last):
+  File "/home/s2sakuri/Crossmodal-Entailment-1/interface.py", line 1, in <module>
+    import torch
+ModuleNotFoundError: No module named 'torch'
+Traceback (most recent call last):
+  File "/home/s2sakuri/Crossmodal-Entailment-1/interface.py", line 1, in <module>
+    import torch
+ModuleNotFoundError: No module named 'torch'
+Traceback (most recent call last):
+  File "/home/s2sakuri/Crossmodal-Entailment-1/interface.py", line 1, in <module>
+    import torch
+ModuleNotFoundError: No module named 'torch'
+Traceback (most recent call last):
+  File "/home/s2sakuri/Crossmodal-Entailment-1/interface.py", line 1, in <module>
+    import torch
+ModuleNotFoundError: No module named 'torch'
+Traceback (most recent call last):
+  File "/home/s2sakuri/Crossmodal-Entailment-1/interface.py", line 1, in <module>
+    import torch
+ModuleNotFoundError: No module named 'torch'
+Traceback (most recent call last):
+  File "/home/s2sakuri/Crossmodal-Entailment-1/interface.py", line 1, in <module>
+    import torch
+ModuleNotFoundError: No module named 'torch'
+Traceback (most recent call last):
+  File "/home/s2sakuri/Crossmodal-Entailment-1/interface.py", line 1, in <module>
+    import torch
+ModuleNotFoundError: No module named 'torch'
+Traceback (most recent call last):
+  File "/home/s2sakuri/Crossmodal-Entailment-1/interface.py", line 1, in <module>
+    import torch
+ModuleNotFoundError: No module named 'torch'
+Traceback (most recent call last):
+  File "/home/s2sakuri/Crossmodal-Entailment-1/interface.py", line 1, in <module>
+    import torch
+ModuleNotFoundError: No module named 'torch'
+Traceback (most recent call last):
+  File "/home/s2sakuri/Crossmodal-Entailment-1/interface.py", line 1, in <module>
+    import torch
+ModuleNotFoundError: No module named 'torch'
+Traceback (most recent call last):
+  File "/home/s2sakuri/Crossmodal-Entailment-1/interface.py", line 1, in <module>
+    import torch
+ModuleNotFoundError: No module named 'torch'
+Traceback (most recent call last):
+  File "/home/s2sakuri/Crossmodal-Entailment-1/interface.py", line 1, in <module>
+    import torch
+ModuleNotFoundError: No module named 'torch'
+Traceback (most recent call last):
+  File "/home/s2sakuri/Crossmodal-Entailment-1/interface.py", line 1, in <module>
+    import torch
+ModuleNotFoundError: No module named 'torch'
+Traceback (most recent call last):
+  File "/home/s2sakuri/Crossmodal-Entailment-1/interface.py", line 1, in <module>
+    import torch
+ModuleNotFoundError: No module named 'torch'
+Traceback (most recent call last):
+  File "/home/s2sakuri/Crossmodal-Entailment-1/interface.py", line 1, in <module>
+    import torch
+ModuleNotFoundError: No module named 'torch'
+Traceback (most recent call last):
+  File "/home/s2sakuri/Crossmodal-Entailment-1/interface.py", line 1, in <module>
+    import torch
+ModuleNotFoundError: No module named 'torch'
+Traceback (most recent call last):
+  File "/home/s2sakuri/Crossmodal-Entailment-1/interface.py", line 1, in <module>
+    import torch
+ModuleNotFoundError: No module named 'torch'
+Traceback (most recent call last):
+  File "/home/s2sakuri/Crossmodal-Entailment-1/interface.py", line 1, in <module>
+    import torch
+ModuleNotFoundError: No module named 'torch'
+16/05/2025 14:55:01
+Mode: Transformer
+FF: 256
+Emb: 16
+Batch: 128
+LR: 0.0001
+Scaling: 500
+~~~TRAINING~~~
+EPOCH: 1
+Loss: 1.1783050000667572
+	Eval Loss: 0.8988758524258932
+EPOCH: 2
+Loss: 0.9274602383375168
+	Eval Loss: 0.8697923024495443
+EPOCH: 3
+Loss: 0.8784077614545822
+	Eval Loss: 0.8084616859753927
+EPOCH: 4
+Loss: 0.83589150570333
+	Eval Loss: 0.7909524738788605
+EPOCH: 5
+Loss: 0.8115167170763016
+	Eval Loss: 0.797434667746226
+EPOCH: 6
+Loss: 0.8131814748048782
+	Eval Loss: 0.7533027033011118
+EPOCH: 7
+Loss: 0.7824140563607216
+	Eval Loss: 0.7641207079092661
+EPOCH: 8
+Loss: 0.7611342258751392
+	Eval Loss: 0.7577610313892365
+EPOCH: 9
+Loss: 0.7563685681670904
+	Eval Loss: 0.76652925213178
+EPOCH: 10
+Loss: 0.7573780082166195
+	Eval Loss: 0.7334692776203156
+EPOCH: 11
+Loss: 0.7416171319782734
+	Eval Loss: 0.756466805934906
+EPOCH: 12
+Loss: 0.7478806767612696
+	Eval Loss: 0.7499096294244131
+EPOCH: 13
+Loss: 0.7314998097717762
+	Eval Loss: 0.7515908181667328
+EPOCH: 14
+Loss: 0.7379798032343388
+	Eval Loss: 0.7628847857316335
+EPOCH: 15
+Loss: 0.7350817155092955
+	Eval Loss: 0.7187994221846262
+EPOCH: 16
+Loss: 0.7312943879514933
+	Eval Loss: 0.7241448362668356
+EPOCH: 17
+Loss: 0.7249782532453537
+	Eval Loss: 0.723075658082962
+EPOCH: 18
+Loss: 0.7285887189209461
+	Eval Loss: 0.7194552620251974
+EPOCH: 19
+Loss: 0.7116600181907415
+	Eval Loss: 0.7656765977541605
+EPOCH: 20
+Loss: 0.7131474912166595
+	Eval Loss: 0.7254201571146647
+EPOCH: 21
+Loss: 0.712979219853878
+	Eval Loss: 0.7459993660449982
+EPOCH: 22
+Loss: 0.7120728641748428
+	Eval Loss: 0.7298352221647898
+EPOCH: 23
+Loss: 0.7067483868449926
+	Eval Loss: 0.7400640745957693
+EPOCH: 24
+Loss: 0.7072364017367363
+	Eval Loss: 0.7178916732470194
+EPOCH: 25
+Loss: 0.7042516823858023
+	Eval Loss: 0.7235706150531769
+EPOCH: 26
+Loss: 0.7028745133429766
+	Eval Loss: 0.7050956984361013
+EPOCH: 27
+Loss: 0.7004217933863401
+	Eval Loss: 0.7200522422790527
+EPOCH: 28
+Loss: 0.6925915591418743
+	Eval Loss: 0.7240213255087534
+EPOCH: 29
+Loss: 0.6879453640431166
+	Eval Loss: 0.7506060798962911
+EPOCH: 30
+Loss: 0.7012248579412699
+	Eval Loss: 0.7255004346370697
+Best Model in Epoch 26 @ 0.7050956984361013
+Test ACC: 0.7336601614952087
+16/05/2025 15:00:13
+16/05/2025 15:00:15
+Mode: LSTM
+FF: 512
+Emb: 32
+Batch: 128
+LR: 0.0001
+Scaling: 500
+~~~TRAINING~~~
+EPOCH: 1
+Loss: 1.1313615217804909
+	Eval Loss: 1.0964227318763733
+EPOCH: 2
+Loss: 1.0679343305528164
+	Eval Loss: 1.0358071724573772
+EPOCH: 3
+Loss: 1.0133920554071665
+	Eval Loss: 0.9756163756052653
+EPOCH: 4
+Loss: 0.9621489159762859
+	Eval Loss: 0.9164340297381083
+EPOCH: 5
+Loss: 0.9143485017120838
+	Eval Loss: 0.8630863527456919
+EPOCH: 6
+Loss: 0.8732643686234951
+	Eval Loss: 0.8246652881304423
+EPOCH: 7
+Loss: 0.8494846299290657
+	Eval Loss: 0.7998132507006327
+EPOCH: 8
+Loss: 0.8397900126874447
+	Eval Loss: 0.7957978546619415
+EPOCH: 9
+Loss: 0.8323783669620752
+	Eval Loss: 0.7823519011338552
+EPOCH: 10
+Loss: 0.8278492353856564
+	Eval Loss: 0.7788000901540121
+EPOCH: 11
+Loss: 0.8217201754450798
+	Eval Loss: 0.7856330176194509
+EPOCH: 12
+Loss: 0.8152463939040899
+	Eval Loss: 0.7728545765082041
+EPOCH: 13
+Loss: 0.8066492658108473
+	Eval Loss: 0.766468733549118
+EPOCH: 14
+Loss: 0.7989689353853464
+	Eval Loss: 0.7713675002257029
+EPOCH: 15
+Loss: 0.7892267163842916
+	Eval Loss: 0.7661818861961365
+EPOCH: 16
+Loss: 0.7767026256769896
+	Eval Loss: 0.7608963350454966
+EPOCH: 17
+Loss: 0.7657493408769369
+	Eval Loss: 0.737798015276591
+EPOCH: 18
+Loss: 0.75254618935287
+	Eval Loss: 0.7419669727484385
+EPOCH: 19
+Loss: 0.7394654713571072
+	Eval Loss: 0.7409580945968628
+EPOCH: 20
+Loss: 0.7250155080109835
+	Eval Loss: 0.7289410928885142
+EPOCH: 21
+Loss: 0.7117780838161707
+	Eval Loss: 0.723990797996521
+EPOCH: 22
+Loss: 0.6964580044150352
+	Eval Loss: 0.7051270008087158
+EPOCH: 23
+Loss: 0.6832302194088697
+	Eval Loss: 0.6947333216667175
+EPOCH: 24
+Loss: 0.6696350667625666
+	Eval Loss: 0.6876343886057535
+EPOCH: 25
+Loss: 0.6563408747315407
+	Eval Loss: 0.6900559465090433
+EPOCH: 26
+Loss: 0.6457128841429949
+	Eval Loss: 0.6799740294615427
+EPOCH: 27
+Loss: 0.6332079041749239
+	Eval Loss: 0.667034367720286
+EPOCH: 28
+Loss: 0.6247217999771237
+	Eval Loss: 0.670705238978068
+EPOCH: 29
+Loss: 0.6160802617669106
+	Eval Loss: 0.6626852750778198
+EPOCH: 30
+Loss: 0.6081692343577743
+	Eval Loss: 0.6747650901476542
+Best Model in Epoch 29 @ 0.6626852750778198
+Test ACC: 0.7467320561408997
+16/05/2025 15:01:58
+16/05/2025 15:02:00
+Mode: Ensemble
+FF: 256
+Emb: 32
+Batch: 128
+LR: 0.0001
+Scaling: 500
+~~~TRAINING~~~
+EPOCH: 1
+Loss: 0.9542107935994864
+	Eval Loss: 0.8339285254478455
+EPOCH: 2
+Loss: 0.8414047881960869
+	Eval Loss: 0.762571374575297
+EPOCH: 3
+Loss: 0.7961813379079103
+	Eval Loss: 0.7763150334358215
+EPOCH: 4
+Loss: 0.7607005462050438
+	Eval Loss: 0.7609735727310181
+EPOCH: 5
+Loss: 0.7491439115256071
+	Eval Loss: 0.73972420891126
+EPOCH: 6
+Loss: 0.7366002444177866
+	Eval Loss: 0.736371765534083
+EPOCH: 7
+Loss: 0.7356744091957808
+	Eval Loss: 0.7270439863204956
+EPOCH: 8
+Loss: 0.7211956772953272
+	Eval Loss: 0.7207045455773672
+EPOCH: 9
+Loss: 0.7166734375059605
+	Eval Loss: 0.755861759185791
+EPOCH: 10
+Loss: 0.7175771687179804
+	Eval Loss: 0.7307570079962412
+EPOCH: 11
+Loss: 0.7022805102169514
+	Eval Loss: 0.7008666197458903
+EPOCH: 12
+Loss: 0.6963424514979124
+	Eval Loss: 0.70001753171285
+EPOCH: 13
+Loss: 0.6998702622950077
+	Eval Loss: 0.7086196541786194
+EPOCH: 14
+Loss: 0.6868111677467823
+	Eval Loss: 0.7106761236985525
+EPOCH: 15
+Loss: 0.688562324270606
+	Eval Loss: 0.6822585066159567
+EPOCH: 16
+Loss: 0.6836434584110975
+	Eval Loss: 0.7328919668992361
+EPOCH: 17
+Loss: 0.6658395770937204
+	Eval Loss: 0.663416584332784
+EPOCH: 18
+Loss: 0.6543786805123091
+	Eval Loss: 0.7011715670426687
+EPOCH: 19
+Loss: 0.6324206981807947
+	Eval Loss: 0.6773058275381724
+EPOCH: 20
+Loss: 0.6199592854827642
+	Eval Loss: 0.6716383198897043
+EPOCH: 21
+Loss: 0.6165350088849664
+	Eval Loss: 0.6489788095156351
+EPOCH: 22
+Loss: 0.6096247406676412
+	Eval Loss: 0.6486800909042358
+EPOCH: 23
+Loss: 0.6083718212321401
+	Eval Loss: 0.6661711831887563
+EPOCH: 24
+Loss: 0.5979674179106951
+	Eval Loss: 0.6733331183592478
+EPOCH: 25
+Loss: 0.5948532857000828
+	Eval Loss: 0.6405266374349594
+EPOCH: 26
+Loss: 0.581378978677094
+	Eval Loss: 0.6473801732063293
+EPOCH: 27
+Loss: 0.578635853715241
+	Eval Loss: 0.6505101422468821
+EPOCH: 28
+Loss: 0.5787531901150942
+	Eval Loss: 0.6564319928487142
+EPOCH: 29
+Loss: 0.5714204236865044
+	Eval Loss: 0.6472693582375845
+EPOCH: 30
+Loss: 0.565039181150496
+	Eval Loss: 0.6584210892518362
+Best Model in Epoch 25 @ 0.6405266374349594
+Test ACC: 0.7728758454322815
+~~~TRAINING~~~
+EPOCH: 1
+Loss: 0.9230554327368736
+	Eval Loss: 0.8221973280111948
+EPOCH: 2
+Loss: 0.849180206656456
+	Eval Loss: 0.7850980758666992
+EPOCH: 3
+Loss: 0.8043810073286295
+	Eval Loss: 0.7538496355215708
+EPOCH: 4
+Loss: 0.7747990470379591
+	Eval Loss: 0.733605702718099
+EPOCH: 5
+Loss: 0.7466357816010714
+	Eval Loss: 0.7320812145868937
+EPOCH: 6
+Loss: 0.7328119538724422
+	Eval Loss: 0.7214308480421702
+EPOCH: 7
+Loss: 0.7292500585317612
+	Eval Loss: 0.7151040534178416
+EPOCH: 8
+Loss: 0.7119516227394342
+	Eval Loss: 0.7116335928440094
+EPOCH: 9
+Loss: 0.7127689346671104
+	Eval Loss: 0.73004549741745
+EPOCH: 10
+Loss: 0.7073655650019646
+	Eval Loss: 0.7124735315640768
+EPOCH: 11
+Loss: 0.7173186149448156
+	Eval Loss: 0.6994192699591318
+EPOCH: 12
+Loss: 0.6927312780171633
+	Eval Loss: 0.710612157980601
+EPOCH: 13
+Loss: 0.7001814525574446
+	Eval Loss: 0.7019633452097574
+EPOCH: 14
+Loss: 0.6868565641343594
+	Eval Loss: 0.7014110088348389
+EPOCH: 15
+Loss: 0.6827952656894922
+	Eval Loss: 0.6934187412261963
+EPOCH: 16
+Loss: 0.6694963779300451
+	Eval Loss: 0.7128522197405497
+EPOCH: 17
+Loss: 0.6650609858334064
+	Eval Loss: 0.6674749950567881
+EPOCH: 18
+Loss: 0.638481555506587
+	Eval Loss: 0.6604546904563904
+EPOCH: 19
+Loss: 0.622402049601078
+	Eval Loss: 0.628309428691864
+EPOCH: 20
+Loss: 0.6205500373616815
+	Eval Loss: 0.6662836968898773
+EPOCH: 21
+Loss: 0.6138787688687444
+	Eval Loss: 0.6527906258900961
+EPOCH: 22
+Loss: 0.612020356580615
+	Eval Loss: 0.654495378335317
+EPOCH: 23
+Loss: 0.5994399320334196
+	Eval Loss: 0.639717161655426
+EPOCH: 24
+Loss: 0.6010633837431669
+	Eval Loss: 0.6610998610655466
+EPOCH: 25
+Loss: 0.5970170265063643
+	Eval Loss: 0.6559139688809713
+EPOCH: 26
+Loss: 0.5890826676040888
+	Eval Loss: 0.6512958407402039
+EPOCH: 27
+Loss: 0.5819353628903627
+	Eval Loss: 0.6721631983915964
+EPOCH: 28
+Loss: 0.5903395330533385
+	Eval Loss: 0.6371813813845316
+EPOCH: 29
+Loss: 0.574252225458622
+	Eval Loss: 0.646882583697637
+EPOCH: 30
+Loss: 0.5763994846493006
+	Eval Loss: 0.6481993496417999
+Best Model in Epoch 19 @ 0.628309428691864
+Test ACC: 0.7549019455909729
+16/05/2025 15:14:21
+16/05/2025 15:14:22
+Mode: BIAS_IND
+FF: 128
+Emb: 16
+Batch: 16
+LR: 0.0001
+Scaling: 500
+~~~TRAINING~~~
+EPOCH: 1
+Loss: 1.006214553117752
+	Eval Loss: 0.8274892396397061
+EPOCH: 2
+Loss: 0.8774384017084159
+	Eval Loss: 0.8631306171417237
+EPOCH: 3
+Loss: 0.8294369644978468
+	Eval Loss: 0.7828479985396067
+EPOCH: 4
+Loss: 0.7835566673793045
+	Eval Loss: 0.7584979746076795
+EPOCH: 5
+Loss: 0.7855475602196712
+	Eval Loss: 0.7620561142762502
+EPOCH: 6
+Loss: 0.76844188144394
+	Eval Loss: 0.7350359506077236
+EPOCH: 7
+Loss: 0.7650211212681789
+	Eval Loss: 0.729290246963501
+EPOCH: 8
+Loss: 0.7610890390826207
+	Eval Loss: 0.7343807995319367
+EPOCH: 9
+Loss: 0.7407965426351509
+	Eval Loss: 0.7360016703605652
+EPOCH: 10
+Loss: 0.7272364734434614
+	Eval Loss: 0.708163481288486
+EPOCH: 11
+Loss: 0.7313820185614567
+	Eval Loss: 0.7229303333494398
+EPOCH: 12
+Loss: 0.7204190874800963
+	Eval Loss: 0.7407326208220588
+EPOCH: 13
+Loss: 0.7162081805514354
+	Eval Loss: 0.7396978477636973
+EPOCH: 14
+Loss: 0.7092190464337667
+	Eval Loss: 0.7255815201335483
+EPOCH: 15
+Loss: 0.7082153589117761
+	Eval Loss: 0.693977087073856
+EPOCH: 16
+Loss: 0.7037095314147426
+	Eval Loss: 0.6800065596898397
+EPOCH: 17
+Loss: 0.6855801841791939
+	Eval Loss: 0.7050644516944885
+EPOCH: 18
+Loss: 0.6900152235638861
+	Eval Loss: 0.7092625286844042
+EPOCH: 19
+Loss: 0.6841830072449703
+	Eval Loss: 0.6898422446515825
+EPOCH: 20
+Loss: 0.6769928433147131
+	Eval Loss: 0.7243358347151014
+EPOCH: 21
+Loss: 0.6677277285678714
+	Eval Loss: 0.6666062480873531
+EPOCH: 22
+Loss: 0.6560605119256412
+	Eval Loss: 0.6490148040983412
+EPOCH: 23
+Loss: 0.6509503818025776
+	Eval Loss: 0.6640427788098653
+EPOCH: 24
+Loss: 0.6520443702445311
+	Eval Loss: 0.6689941379759047
+EPOCH: 25
+Loss: 0.6477586801145591
+	Eval Loss: 0.6813639382521312
+EPOCH: 26
+Loss: 0.6468839444366156
+	Eval Loss: 0.6480161329110463
+EPOCH: 27
+Loss: 0.6370622045853559
+	Eval Loss: 0.6840213020642598
+EPOCH: 28
+Loss: 0.6320742259422938
+	Eval Loss: 0.6464744177129533
+EPOCH: 29
+Loss: 0.6303082077526578
+	Eval Loss: 0.6741307066546546
+EPOCH: 30
+Loss: 0.6294725296544094
+	Eval Loss: 0.6479658676518334
+Best Model in Epoch 28 @ 0.6464744177129533
+Test ACC: 0.7728758454322815
+16/05/2025 15:29:14
+Traceback (most recent call last):
+  File "/home/s2sakuri/Crossmodal-Entailment-1/interface.py", line 1, in <module>
+    import torch
+ModuleNotFoundError: No module named 'torch'
+Traceback (most recent call last):
+  File "/home/s2sakuri/Crossmodal-Entailment-1/interface.py", line 1, in <module>
+    import torch
+ModuleNotFoundError: No module named 'torch'
+Traceback (most recent call last):
+  File "/home/s2sakuri/Crossmodal-Entailment-1/interface.py", line 1, in <module>
+    import torch
+ModuleNotFoundError: No module named 'torch'
+Traceback (most recent call last):
+  File "/home/s2sakuri/Crossmodal-Entailment-1/interface.py", line 1, in <module>
+    import torch
+ModuleNotFoundError: No module named 'torch'
+18/05/2025 22:17:32
+Mode: Ensemble
+FF: 256
+Emb: 32
+Batch: 128
+LR: 0.0001
+Scaling: 500
+~~~TRAINING~~~
+Traceback (most recent call last):
+  File "interface.py", line 46, in <module>
+    best = trainer.train(model)
+  File "/home/s2sakuri/Crossmodal-Entailment-1/trainer.py", line 143, in train
+    outs = model(seqInputs,featureInputs)
+  File "/home/s2sakuri/Crossmodal-Entailment-1/.conda/lib/python3.8/site-packages/torch/nn/modules/module.py", line 1110, in _call_impl
+    return forward_call(*input, **kwargs)
+  File "/home/s2sakuri/Crossmodal-Entailment-1/model.py", line 210, in forward
+    attn_weights = self.attention(combined)                 # shape: [batch_size, 2]
+  File "/home/s2sakuri/Crossmodal-Entailment-1/.conda/lib/python3.8/site-packages/torch/nn/modules/module.py", line 1110, in _call_impl
+    return forward_call(*input, **kwargs)
+  File "/home/s2sakuri/Crossmodal-Entailment-1/.conda/lib/python3.8/site-packages/torch/nn/modules/container.py", line 141, in forward
+    input = module(input)
+  File "/home/s2sakuri/Crossmodal-Entailment-1/.conda/lib/python3.8/site-packages/torch/nn/modules/module.py", line 1110, in _call_impl
+    return forward_call(*input, **kwargs)
+  File "/home/s2sakuri/Crossmodal-Entailment-1/.conda/lib/python3.8/site-packages/torch/nn/modules/linear.py", line 103, in forward
+    return F.linear(input, self.weight, self.bias)
+RuntimeError: Expected all tensors to be on the same device, but found at least two devices, cpu and cuda:0! (when checking argument for argument mat1 in method wrapper_addmm)
+18/05/2025 22:21:03
+Mode: Ensemble
+FF: 256
+Emb: 32
+Batch: 128
+LR: 0.0001
+Scaling: 500
+~~~TRAINING~~~
+Traceback (most recent call last):
+  File "interface.py", line 46, in <module>
+    best = trainer.train(model)
+  File "/home/s2sakuri/Crossmodal-Entailment-1/trainer.py", line 143, in train
+    outs = model(seqInputs,featureInputs)
+  File "/home/s2sakuri/Crossmodal-Entailment-1/.conda/lib/python3.8/site-packages/torch/nn/modules/module.py", line 1110, in _call_impl
+    return forward_call(*input, **kwargs)
+  File "/home/s2sakuri/Crossmodal-Entailment-1/model.py", line 207, in forward
+    lengths = lengths.to('cpu')  # lengths used in packing, must be on CPU
+AttributeError: 'list' object has no attribute 'to'
+18/05/2025 22:25:45
+Mode: Ensemble
+FF: 256
+Emb: 32
+Batch: 128
+LR: 0.0001
+Scaling: 500
+~~~TRAINING~~~
+EPOCH: 1
+Loss: 0.9817163776606321
+	Eval Loss: 0.8276320596536001
+EPOCH: 2
+Loss: 0.8562573753297329
+	Eval Loss: 0.7906662821769714
+EPOCH: 3
+Loss: 0.8176462464034557
+	Eval Loss: 0.7505923509597778
+EPOCH: 4
+Loss: 0.7841446958482265
+	Eval Loss: 0.7524004479249319
+EPOCH: 5
+Loss: 0.7605407107621431
+	Eval Loss: 0.7396770318349203
+EPOCH: 6
+Loss: 0.7488602790981531
+	Eval Loss: 0.7371477087338766
+EPOCH: 7
+Loss: 0.7321104351431131
+	Eval Loss: 0.7390480736891428
+EPOCH: 8
+Loss: 0.7376351729035378
+	Eval Loss: 0.7329466342926025
+EPOCH: 9
+Loss: 0.7239657584577799
+	Eval Loss: 0.7370990216732025
+EPOCH: 10
+Loss: 0.7182114124298096
+	Eval Loss: 0.7163335581620535
+EPOCH: 11
+Loss: 0.7025561723858118
+	Eval Loss: 0.7117334008216858
+EPOCH: 12
+Loss: 0.7075427677482367
+	Eval Loss: 0.7105925977230072
+EPOCH: 13
+Loss: 0.6925410330295563
+	Eval Loss: 0.7176636358102163
+EPOCH: 14
+Loss: 0.6953354012221098
+	Eval Loss: 0.7510117888450623
+EPOCH: 15
+Loss: 0.6961582023650408
+	Eval Loss: 0.7137157618999481
+EPOCH: 16
+Loss: 0.6827392615377903
+	Eval Loss: 0.7036345402399699
+EPOCH: 17
+Loss: 0.6656043771654367
+	Eval Loss: 0.6794337729612986
+EPOCH: 18
+Loss: 0.6630272846668959
+	Eval Loss: 0.6653706034024557
+EPOCH: 19
+Loss: 0.6419894155114889
+	Eval Loss: 0.6663353542486826
+EPOCH: 20
+Loss: 0.6285810880362988
+	Eval Loss: 0.6646314164002737
+EPOCH: 21
+Loss: 0.6192157994955778
+	Eval Loss: 0.6405364076296488
+EPOCH: 22
+Loss: 0.6102562239393592
+	Eval Loss: 0.67366890112559
+EPOCH: 23
+Loss: 0.6014876831322908
+	Eval Loss: 0.6311535239219666
+EPOCH: 24
+Loss: 0.6058397032320499
+	Eval Loss: 0.6579927702744802
+EPOCH: 25
+Loss: 0.5928433239459991
+	Eval Loss: 0.654051810503006
+EPOCH: 26
+Loss: 0.5880793239921331
+	Eval Loss: 0.660901298125585
+EPOCH: 27
+Loss: 0.5832738885655999
+	Eval Loss: 0.6870526274045309
+EPOCH: 28
+Loss: 0.5790333393961191
+	Eval Loss: 0.6417285700639089
+EPOCH: 29
+Loss: 0.5714090736582875
+	Eval Loss: 0.6529804666837057
+EPOCH: 30
+Loss: 0.5653148628771305
+	Eval Loss: 0.6322674055894216
+Best Model in Epoch 23 @ 0.6311535239219666
+Test ACC: 0.766339898109436
+~~~TRAINING~~~
+EPOCH: 1
+Loss: 0.9470230285078287
+	Eval Loss: 0.9131684203942617
+EPOCH: 2
+Loss: 0.8913567569106817
+	Eval Loss: 0.8090807894865671
+EPOCH: 3
+Loss: 0.8469315562397242
+	Eval Loss: 0.8208571672439575
+EPOCH: 4
+Loss: 0.8078113235533237
+	Eval Loss: 0.7893201808134714
+EPOCH: 5
+Loss: 0.7856687996536493
+	Eval Loss: 0.7961000998814901
+EPOCH: 6
+Loss: 0.763547969982028
+	Eval Loss: 0.7432958980401357
+EPOCH: 7
+Loss: 0.772561440244317
+	Eval Loss: 0.7460002501805624
+EPOCH: 8
+Loss: 0.7590142488479614
+	Eval Loss: 0.7364760239919027
+EPOCH: 9
+Loss: 0.7576392237097025
+	Eval Loss: 0.7294131020704905
+EPOCH: 10
+Loss: 0.7578726168721914
+	Eval Loss: 0.7332409719626108
+EPOCH: 11
+Loss: 0.7514132838696241
+	Eval Loss: 0.7161085804303488
+EPOCH: 12
+Loss: 0.7480552978813648
+	Eval Loss: 0.738334983587265
+EPOCH: 13
+Loss: 0.7450097650289536
+	Eval Loss: 0.7357468803723654
+EPOCH: 14
+Loss: 0.7350177969783545
+	Eval Loss: 0.7301932175954183
+EPOCH: 15
+Loss: 0.7355701848864555
+	Eval Loss: 0.7319748004277548
+EPOCH: 16
+Loss: 0.7278387434780598
+	Eval Loss: 0.7151682575543722
+EPOCH: 17
+Loss: 0.7139868941158056
+	Eval Loss: 0.715959370136261
+EPOCH: 18
+Loss: 0.7050784043967724
+	Eval Loss: 0.7238670190175375
+EPOCH: 19
+Loss: 0.6917083095759153
+	Eval Loss: 0.7032948931058248
+EPOCH: 20
+Loss: 0.683957152068615
+	Eval Loss: 0.7041975955168406
+EPOCH: 21
+Loss: 0.6703124847263098
+	Eval Loss: 0.7200997869173685
+EPOCH: 22
+Loss: 0.6698035337030888
+	Eval Loss: 0.6978644629319509
+EPOCH: 23
+Loss: 0.656427288427949
+	Eval Loss: 0.6991717914740244
+EPOCH: 24
+Loss: 0.651125393807888
+	Eval Loss: 0.6998602052529653
+EPOCH: 25
+Loss: 0.6472455244511366
+	Eval Loss: 0.7100230852762858
+EPOCH: 26
+Loss: 0.6454976182430983
+	Eval Loss: 0.6817701905965805
+EPOCH: 27
+Loss: 0.6459660232067108
+	Eval Loss: 0.7194590071837107
+EPOCH: 28
+Loss: 0.6290412079542875
+	Eval Loss: 0.7143512070178986
+EPOCH: 29
+Loss: 0.6163504142314196
+	Eval Loss: 0.7080032229423523
+EPOCH: 30
+Loss: 0.6202030275017023
+	Eval Loss: 0.7112048467000326
+Best Model in Epoch 26 @ 0.6817701905965805
+Test ACC: 0.741830050945282
+Mode: LSTM
+FF: 512
+Emb: 32
+Batch: 128
+LR: 0.0001
+Scaling: 500
+~~~TRAINING~~~
+EPOCH: 1
+Loss: 1.1313615217804909
+	Eval Loss: 1.0964227318763733
+EPOCH: 2
+Loss: 1.0679343305528164
+	Eval Loss: 1.0358071724573772
+EPOCH: 3
+Loss: 1.0133920554071665
+	Eval Loss: 0.9756163756052653
+EPOCH: 4
+Loss: 0.9621489159762859
+	Eval Loss: 0.9164340297381083
+EPOCH: 5
+Loss: 0.9143485017120838
+	Eval Loss: 0.8630863527456919
+EPOCH: 6
+Loss: 0.8732643686234951
+	Eval Loss: 0.8246652881304423
+EPOCH: 7
+Loss: 0.8494846299290657
+	Eval Loss: 0.7998132507006327
+EPOCH: 8
+Loss: 0.8397900126874447
+	Eval Loss: 0.7957978546619415
+EPOCH: 9
+Loss: 0.8323783669620752
+	Eval Loss: 0.7823519011338552
+EPOCH: 10
+Loss: 0.8278492353856564
+	Eval Loss: 0.7788000901540121
+EPOCH: 11
+Loss: 0.8217201754450798
+	Eval Loss: 0.7856330176194509
+EPOCH: 12
+Loss: 0.8152463939040899
+	Eval Loss: 0.7728545765082041
+EPOCH: 13
+Loss: 0.8066492658108473
+	Eval Loss: 0.766468733549118
+EPOCH: 14
+Loss: 0.7989689353853464
+	Eval Loss: 0.7713675002257029
+EPOCH: 15
+Loss: 0.7892267163842916
+	Eval Loss: 0.7661818861961365
+EPOCH: 16
+Loss: 0.7767026256769896
+	Eval Loss: 0.7608963350454966
+EPOCH: 17
+Loss: 0.7657493408769369
+	Eval Loss: 0.737798015276591
+EPOCH: 18
+Loss: 0.75254618935287
+	Eval Loss: 0.7419669727484385
+EPOCH: 19
+Loss: 0.7394654713571072
+	Eval Loss: 0.7409580945968628
+EPOCH: 20
+Loss: 0.7250155080109835
+	Eval Loss: 0.7289410928885142
+EPOCH: 21
+Loss: 0.7117780838161707
+	Eval Loss: 0.723990797996521
+EPOCH: 22
+Loss: 0.6964580044150352
+	Eval Loss: 0.7051270008087158
+EPOCH: 23
+Loss: 0.6832302194088697
+	Eval Loss: 0.6947333216667175
+EPOCH: 24
+Loss: 0.6696350667625666
+	Eval Loss: 0.6876343886057535
+EPOCH: 25
+Loss: 0.6563408747315407
+	Eval Loss: 0.6900559465090433
+EPOCH: 26
+Loss: 0.6457128841429949
+	Eval Loss: 0.6799740294615427
+EPOCH: 27
+Loss: 0.6332079041749239
+	Eval Loss: 0.667034367720286
+EPOCH: 28
+Loss: 0.6247217999771237
+	Eval Loss: 0.670705238978068
+EPOCH: 29
+Loss: 0.6160802617669106
+	Eval Loss: 0.6626852750778198
+EPOCH: 30
+Loss: 0.6081692343577743
+	Eval Loss: 0.6747650901476542
+Best Model in Epoch 29 @ 0.6626852750778198
+Test ACC: 0.7467320561408997
+Mode: Ensemble
+FF: 256
+Emb: 32
+Batch: 128
+LR: 0.0001
+Scaling: 500
+~~~TRAINING~~~
+EPOCH: 1
+Loss: 0.9542107935994864
+	Eval Loss: 0.8339285254478455
+EPOCH: 2
+Loss: 0.8414047881960869
+	Eval Loss: 0.762571374575297
+EPOCH: 3
+Loss: 0.7961813379079103
+	Eval Loss: 0.7763150334358215
+EPOCH: 4
+Loss: 0.7607005462050438
+	Eval Loss: 0.7609735727310181
+EPOCH: 5
+Loss: 0.7491439115256071
+	Eval Loss: 0.73972420891126
+EPOCH: 6
+Loss: 0.7366002444177866
+	Eval Loss: 0.736371765534083
+EPOCH: 7
+Loss: 0.7356744091957808
+	Eval Loss: 0.7270439863204956
+EPOCH: 8
+Loss: 0.7211956772953272
+	Eval Loss: 0.7207045455773672
+EPOCH: 9
+Loss: 0.7166734375059605
+	Eval Loss: 0.755861759185791
+EPOCH: 10
+Loss: 0.7175771687179804
+	Eval Loss: 0.7307570079962412
+EPOCH: 11
+Loss: 0.7022805102169514
+	Eval Loss: 0.7008666197458903
+EPOCH: 12
+Loss: 0.6963424514979124
+	Eval Loss: 0.70001753171285
+EPOCH: 13
+Loss: 0.6998702622950077
+	Eval Loss: 0.7086196541786194
+EPOCH: 14
+Loss: 0.6868111677467823
+	Eval Loss: 0.7106761236985525
+EPOCH: 15
+Loss: 0.688562324270606
+	Eval Loss: 0.6822585066159567
+EPOCH: 16
+Loss: 0.6836434584110975
+	Eval Loss: 0.7328919668992361
+EPOCH: 17
+Loss: 0.6658395770937204
+	Eval Loss: 0.663416584332784
+EPOCH: 18
+Loss: 0.6543786805123091
+	Eval Loss: 0.7011715670426687
+EPOCH: 19
+Loss: 0.6324206981807947
+	Eval Loss: 0.6773058275381724
+EPOCH: 20
+Loss: 0.6199592854827642
+	Eval Loss: 0.6716383198897043
+EPOCH: 21
+Loss: 0.6165350088849664
+	Eval Loss: 0.6489788095156351
+EPOCH: 22
+Loss: 0.6096247406676412
+	Eval Loss: 0.6486800909042358
+EPOCH: 23
+Loss: 0.6083718212321401
+	Eval Loss: 0.6661711831887563
+EPOCH: 24
+Loss: 0.5979674179106951
+	Eval Loss: 0.6733331183592478
+EPOCH: 25
+Loss: 0.5948532857000828
+	Eval Loss: 0.6405266374349594
+EPOCH: 26
+Loss: 0.581378978677094
+	Eval Loss: 0.6473801732063293
+EPOCH: 27
+Loss: 0.578635853715241
+	Eval Loss: 0.6505101422468821
+EPOCH: 28
+Loss: 0.5787531901150942
+	Eval Loss: 0.6564319928487142
+EPOCH: 29
+Loss: 0.5714204236865044
+	Eval Loss: 0.6472693582375845
+EPOCH: 30
+Loss: 0.565039181150496
+	Eval Loss: 0.6584210892518362
+Best Model in Epoch 25 @ 0.6405266374349594
+Test ACC: 0.7728758454322815
+~~~TRAINING~~~
+EPOCH: 1
+Loss: 0.9230554327368736
+	Eval Loss: 0.8221973280111948
+EPOCH: 2
+Loss: 0.849180206656456
+	Eval Loss: 0.7850980758666992
+EPOCH: 3
+Loss: 0.8043810073286295
+	Eval Loss: 0.7538496355215708
+EPOCH: 4
+Loss: 0.7747990470379591
+	Eval Loss: 0.733605702718099
+EPOCH: 5
+Loss: 0.7466357816010714
+	Eval Loss: 0.7320812145868937
+EPOCH: 6
+Loss: 0.7328119538724422
+	Eval Loss: 0.7214308480421702
+EPOCH: 7
+Loss: 0.7292500585317612
+	Eval Loss: 0.7151040534178416
+EPOCH: 8
+Loss: 0.7119516227394342
+	Eval Loss: 0.7116335928440094
+EPOCH: 9
+Loss: 0.7127689346671104
+	Eval Loss: 0.73004549741745
+EPOCH: 10
+Loss: 0.7073655650019646
+	Eval Loss: 0.7124735315640768
+EPOCH: 11
+Loss: 0.7173186149448156
+	Eval Loss: 0.6994192699591318
+EPOCH: 12
+Loss: 0.6927312780171633
+	Eval Loss: 0.710612157980601
+EPOCH: 13
+Loss: 0.7001814525574446
+	Eval Loss: 0.7019633452097574
+EPOCH: 14
+Loss: 0.6868565641343594
+	Eval Loss: 0.7014110088348389
+EPOCH: 15
+Loss: 0.6827952656894922
+	Eval Loss: 0.6934187412261963
+EPOCH: 16
+Loss: 0.6694963779300451
+	Eval Loss: 0.7128522197405497
+EPOCH: 17
+Loss: 0.6650609858334064
+	Eval Loss: 0.6674749950567881
+EPOCH: 18
+Loss: 0.638481555506587
+	Eval Loss: 0.6604546904563904
+EPOCH: 19
+Loss: 0.622402049601078
+	Eval Loss: 0.628309428691864
+EPOCH: 20
+Loss: 0.6205500373616815
+	Eval Loss: 0.6662836968898773
+EPOCH: 21
+Loss: 0.6138787688687444
+	Eval Loss: 0.6527906258900961
+EPOCH: 22
+Loss: 0.612020356580615
+	Eval Loss: 0.654495378335317
+EPOCH: 23
+Loss: 0.5994399320334196
+	Eval Loss: 0.639717161655426
+EPOCH: 24
+Loss: 0.6010633837431669
+	Eval Loss: 0.6610998610655466
+EPOCH: 25
+Loss: 0.5970170265063643
+	Eval Loss: 0.6559139688809713
+EPOCH: 26
+Loss: 0.5890826676040888
+	Eval Loss: 0.6512958407402039
+EPOCH: 27
+Loss: 0.5819353628903627
+	Eval Loss: 0.6721631983915964
+EPOCH: 28
+Loss: 0.5903395330533385
+	Eval Loss: 0.6371813813845316
+EPOCH: 29
+Loss: 0.574252225458622
+	Eval Loss: 0.646882583697637
+EPOCH: 30
+Loss: 0.5763994846493006
+	Eval Loss: 0.6481993496417999
+Best Model in Epoch 19 @ 0.628309428691864
+Test ACC: 0.7549019455909729
+Mode: Ensemble
+FF: 256
+Emb: 32
+Batch: 128
+LR: 0.0001
+Scaling: 500
+~~~TRAINING~~~
+EPOCH: 1
+Loss: 0.9542107935994864
+	Eval Loss: 0.8339285254478455
+EPOCH: 2
+Loss: 0.8414047881960869
+	Eval Loss: 0.762571374575297
+EPOCH: 3
+Loss: 0.7961813379079103
+	Eval Loss: 0.7763150334358215
+EPOCH: 4
+Loss: 0.7607005462050438
+	Eval Loss: 0.7609735727310181
+EPOCH: 5
+Loss: 0.7491439115256071
+	Eval Loss: 0.73972420891126
+EPOCH: 6
+Loss: 0.7366002444177866
+	Eval Loss: 0.736371765534083
+EPOCH: 7
+Loss: 0.7356744091957808
+	Eval Loss: 0.7270439863204956
+EPOCH: 8
+Loss: 0.7211956772953272
+	Eval Loss: 0.7207045455773672
+EPOCH: 9
+Loss: 0.7166734375059605
+	Eval Loss: 0.755861759185791
+EPOCH: 10
+Loss: 0.7175771687179804
+	Eval Loss: 0.7307570079962412
+EPOCH: 11
+Loss: 0.7022805102169514
+	Eval Loss: 0.7008666197458903
+EPOCH: 12
+Loss: 0.6963424514979124
+	Eval Loss: 0.70001753171285
+EPOCH: 13
+Loss: 0.6998702622950077
+	Eval Loss: 0.7086196541786194
+EPOCH: 14
+Loss: 0.6868111677467823
+	Eval Loss: 0.7106761236985525
+EPOCH: 15
+Loss: 0.688562324270606
+	Eval Loss: 0.6822585066159567
+EPOCH: 16
+Loss: 0.6836434584110975
+	Eval Loss: 0.7328919668992361
+EPOCH: 17
+Loss: 0.6658395770937204
+	Eval Loss: 0.663416584332784
+EPOCH: 18
+Loss: 0.6543786805123091
+	Eval Loss: 0.7011715670426687
+EPOCH: 19
+Loss: 0.6324206981807947
+	Eval Loss: 0.6773058275381724
+EPOCH: 20
+Loss: 0.6199592854827642
+	Eval Loss: 0.6716383198897043
+EPOCH: 21
+Loss: 0.6165350088849664
+	Eval Loss: 0.6489788095156351
+EPOCH: 22
+Loss: 0.6096247406676412
+	Eval Loss: 0.6486800909042358
+EPOCH: 23
+Loss: 0.6083718212321401
+	Eval Loss: 0.6661711831887563
+EPOCH: 24
+Loss: 0.5979674179106951
+	Eval Loss: 0.6733331183592478
+EPOCH: 25
+Loss: 0.5948532857000828
+	Eval Loss: 0.6405266374349594
+EPOCH: 26
+Loss: 0.581378978677094
+	Eval Loss: 0.6473801732063293
+EPOCH: 27
+Loss: 0.578635853715241
+	Eval Loss: 0.6505101422468821
+EPOCH: 28
+Loss: 0.5787531901150942
+	Eval Loss: 0.6564319928487142
+EPOCH: 29
+Loss: 0.5714204236865044
+	Eval Loss: 0.6472693582375845
+EPOCH: 30
+Loss: 0.565039181150496
+	Eval Loss: 0.6584210892518362
+Best Model in Epoch 25 @ 0.6405266374349594
+Test ACC: 0.7728758454322815
+~~~TRAINING~~~
+EPOCH: 1
+Loss: 0.9230554327368736
+	Eval Loss: 0.8221973280111948
+EPOCH: 2
+Loss: 0.849180206656456
+	Eval Loss: 0.7850980758666992
+EPOCH: 3
+Loss: 0.8043810073286295
+	Eval Loss: 0.7538496355215708
+EPOCH: 4
+Loss: 0.7747990470379591
+	Eval Loss: 0.733605702718099
+EPOCH: 5
+Loss: 0.7466357816010714
+	Eval Loss: 0.7320812145868937
+EPOCH: 6
+Loss: 0.7328119538724422
+	Eval Loss: 0.7214308480421702
+EPOCH: 7
+Loss: 0.7292500585317612
+	Eval Loss: 0.7151040534178416
+EPOCH: 8
+Loss: 0.7119516227394342
+	Eval Loss: 0.7116335928440094
+EPOCH: 9
+Loss: 0.7127689346671104
+	Eval Loss: 0.73004549741745
+EPOCH: 10
+Loss: 0.7073655650019646
+	Eval Loss: 0.7124735315640768
+EPOCH: 11
+Loss: 0.7173186149448156
+	Eval Loss: 0.6994192699591318
+EPOCH: 12
+Loss: 0.6927312780171633
+	Eval Loss: 0.710612157980601
+EPOCH: 13
+Loss: 0.7001814525574446
+	Eval Loss: 0.7019633452097574
+EPOCH: 14
+Loss: 0.6868565641343594
+	Eval Loss: 0.7014110088348389
+EPOCH: 15
+Loss: 0.6827952656894922
+	Eval Loss: 0.6934187412261963
+EPOCH: 16
+Loss: 0.6694963779300451
+	Eval Loss: 0.7128522197405497
+EPOCH: 17
+Loss: 0.6650609858334064
+	Eval Loss: 0.6674749950567881
+EPOCH: 18
+Loss: 0.638481555506587
+	Eval Loss: 0.6604546904563904
+EPOCH: 19
+Loss: 0.622402049601078
+	Eval Loss: 0.628309428691864
+EPOCH: 20
+Loss: 0.6205500373616815
+	Eval Loss: 0.6662836968898773
+EPOCH: 21
+Loss: 0.6138787688687444
+	Eval Loss: 0.6527906258900961
+EPOCH: 22
+Loss: 0.612020356580615
+	Eval Loss: 0.654495378335317
+EPOCH: 23
+Loss: 0.5994399320334196
+	Eval Loss: 0.639717161655426
+EPOCH: 24
+Loss: 0.6010633837431669
+	Eval Loss: 0.6610998610655466
+EPOCH: 25
+Loss: 0.5970170265063643
+	Eval Loss: 0.6559139688809713
+EPOCH: 26
+Loss: 0.5890826676040888
+	Eval Loss: 0.6512958407402039
+EPOCH: 27
+Loss: 0.5819353628903627
+	Eval Loss: 0.6721631983915964
+EPOCH: 28
+Loss: 0.5903395330533385
+	Eval Loss: 0.6371813813845316
+EPOCH: 29
+Loss: 0.574252225458622
+	Eval Loss: 0.646882583697637
+EPOCH: 30
+Loss: 0.5763994846493006
+	Eval Loss: 0.6481993496417999
+Best Model in Epoch 19 @ 0.628309428691864
+Test ACC: 0.7549019455909729
+Mode: Transformer
+FF: 256
+Emb: 16
+Batch: 128
+LR: 0.0001
+Scaling: 500
+~~~TRAINING~~~
+EPOCH: 1
+Loss: 1.1783050000667572
+	Eval Loss: 0.8988758524258932
+EPOCH: 2
+Loss: 0.9274602383375168
+	Eval Loss: 0.8697923024495443
+EPOCH: 3
+Loss: 0.8784077614545822
+	Eval Loss: 0.8084616859753927
+EPOCH: 4
+Loss: 0.83589150570333
+	Eval Loss: 0.7909524738788605
+EPOCH: 5
+Loss: 0.8115167170763016
+	Eval Loss: 0.797434667746226
+EPOCH: 6
+Loss: 0.8131814748048782
+	Eval Loss: 0.7533027033011118
+EPOCH: 7
+Loss: 0.7824140563607216
+	Eval Loss: 0.7641207079092661
+EPOCH: 8
+Loss: 0.7611342258751392
+	Eval Loss: 0.7577610313892365
+EPOCH: 9
+Loss: 0.7563685681670904
+	Eval Loss: 0.76652925213178
+EPOCH: 10
+Loss: 0.7573780082166195
+	Eval Loss: 0.7334692776203156
+EPOCH: 11
+Loss: 0.7416171319782734
+	Eval Loss: 0.756466805934906
+EPOCH: 12
+Loss: 0.7478806767612696
+	Eval Loss: 0.7499096294244131
+EPOCH: 13
+Loss: 0.7314998097717762
+	Eval Loss: 0.7515908181667328
+EPOCH: 14
+Loss: 0.7379798032343388
+	Eval Loss: 0.7628847857316335
+EPOCH: 15
+Loss: 0.7350817155092955
+	Eval Loss: 0.7187994221846262
+EPOCH: 16
+Loss: 0.7312943879514933
+	Eval Loss: 0.7241448362668356
+EPOCH: 17
+Loss: 0.7249782532453537
+	Eval Loss: 0.723075658082962
+EPOCH: 18
+Loss: 0.7285887189209461
+	Eval Loss: 0.7194552620251974
+EPOCH: 19
+Loss: 0.7116600181907415
+	Eval Loss: 0.7656765977541605
+EPOCH: 20
+Loss: 0.7131474912166595
+	Eval Loss: 0.7254201571146647
+EPOCH: 21
+Loss: 0.712979219853878
+	Eval Loss: 0.7459993660449982
+EPOCH: 22
+Loss: 0.7120728641748428
+	Eval Loss: 0.7298352221647898
+EPOCH: 23
+Loss: 0.7067483868449926
+	Eval Loss: 0.7400640745957693
+EPOCH: 24
+Loss: 0.7072364017367363
+	Eval Loss: 0.7178916732470194
+EPOCH: 25
+Loss: 0.7042516823858023
+	Eval Loss: 0.7235706150531769
+EPOCH: 26
+Loss: 0.7028745133429766
+	Eval Loss: 0.7050956984361013
+EPOCH: 27
+Loss: 0.7004217933863401
+	Eval Loss: 0.7200522422790527
+EPOCH: 28
+Loss: 0.6925915591418743
+	Eval Loss: 0.7240213255087534
+EPOCH: 29
+Loss: 0.6879453640431166
+	Eval Loss: 0.7506060798962911
+EPOCH: 30
+Loss: 0.7012248579412699
+	Eval Loss: 0.7255004346370697
+Best Model in Epoch 26 @ 0.7050956984361013
+Test ACC: 0.7336601614952087
+Mode: Transformer
+FF: 256
+Emb: 16
+Batch: 128
+LR: 0.0001
+Scaling: 500
+~~~TRAINING~~~
+EPOCH: 1
+Loss: 1.1783050000667572
+	Eval Loss: 0.8988758524258932
+EPOCH: 2
+Loss: 0.9274602383375168
+	Eval Loss: 0.8697923024495443
+EPOCH: 3
+Loss: 0.8784077614545822
+	Eval Loss: 0.8084616859753927
+EPOCH: 4
+Loss: 0.83589150570333
+	Eval Loss: 0.7909524738788605
+EPOCH: 5
+Loss: 0.8115167170763016
+	Eval Loss: 0.797434667746226
+EPOCH: 6
+Loss: 0.8131814748048782
+	Eval Loss: 0.7533027033011118
+EPOCH: 7
+Loss: 0.7824140563607216
+	Eval Loss: 0.7641207079092661
+EPOCH: 8
+Loss: 0.7611342258751392
+	Eval Loss: 0.7577610313892365
+EPOCH: 9
+Loss: 0.7563685681670904
+	Eval Loss: 0.76652925213178
+EPOCH: 10
+Loss: 0.7573780082166195
+	Eval Loss: 0.7334692776203156
+EPOCH: 11
+Loss: 0.7416171319782734
+	Eval Loss: 0.756466805934906
+EPOCH: 12
+Loss: 0.7478806767612696
+	Eval Loss: 0.7499096294244131
+EPOCH: 13
+Loss: 0.7314998097717762
+	Eval Loss: 0.7515908181667328
+EPOCH: 14
+Loss: 0.7379798032343388
+	Eval Loss: 0.7628847857316335
+EPOCH: 15
+Loss: 0.7350817155092955
+	Eval Loss: 0.7187994221846262
+EPOCH: 16
+Loss: 0.7312943879514933
+	Eval Loss: 0.7241448362668356
+EPOCH: 17
+Loss: 0.7249782532453537
+	Eval Loss: 0.723075658082962
+EPOCH: 18
+Loss: 0.7285887189209461
+	Eval Loss: 0.7194552620251974
+EPOCH: 19
+Loss: 0.7116600181907415
+	Eval Loss: 0.7656765977541605
+EPOCH: 20
+Loss: 0.7131474912166595
+	Eval Loss: 0.7254201571146647
+Best Model in Epoch 15 @ 0.7187994221846262
+Test ACC: 0.7124183177947998
+Mode: LSTM
+FF: 512
+Emb: 32
+Batch: 128
+LR: 0.0001
+Scaling: 500
+~~~TRAINING~~~
+EPOCH: 1
+Loss: 1.1313615217804909
+	Eval Loss: 1.0964227318763733
+EPOCH: 2
+Loss: 1.0679343305528164
+	Eval Loss: 1.0358071724573772
+EPOCH: 3
+Loss: 1.0133920554071665
+	Eval Loss: 0.9756163756052653
+EPOCH: 4
+Loss: 0.9621489159762859
+	Eval Loss: 0.9164340297381083
+EPOCH: 5
+Loss: 0.9143485017120838
+	Eval Loss: 0.8630863527456919
+EPOCH: 6
+Loss: 0.8732643686234951
+	Eval Loss: 0.8246652881304423
+EPOCH: 7
+Loss: 0.8494846299290657
+	Eval Loss: 0.7998132507006327
+EPOCH: 8
+Loss: 0.8397900126874447
+	Eval Loss: 0.7957978546619415
+EPOCH: 9
+Loss: 0.8323783669620752
+	Eval Loss: 0.7823519011338552
+EPOCH: 10
+Loss: 0.8278492353856564
+	Eval Loss: 0.7788000901540121
+EPOCH: 11
+Loss: 0.8217201754450798
+	Eval Loss: 0.7856330176194509
+EPOCH: 12
+Loss: 0.8152463939040899
+	Eval Loss: 0.7728545765082041
+EPOCH: 13
+Loss: 0.8066492658108473
+	Eval Loss: 0.766468733549118
+EPOCH: 14
+Loss: 0.7989689353853464
+	Eval Loss: 0.7713675002257029
+EPOCH: 15
+Loss: 0.7892267163842916
+	Eval Loss: 0.7661818861961365
+EPOCH: 16
+Loss: 0.7767026256769896
+	Eval Loss: 0.7608963350454966
+EPOCH: 17
+Loss: 0.7657493408769369
+	Eval Loss: 0.737798015276591
+EPOCH: 18
+Loss: 0.75254618935287
+	Eval Loss: 0.7419669727484385
+EPOCH: 19
+Loss: 0.7394654713571072
+	Eval Loss: 0.7409580945968628
+EPOCH: 20
+Loss: 0.7250155080109835
+	Eval Loss: 0.7289410928885142
+EPOCH: 21
+Loss: 0.7117780838161707
+	Eval Loss: 0.723990797996521
+EPOCH: 22
+Loss: 0.6964580044150352
+	Eval Loss: 0.7051270008087158
+EPOCH: 23
+Loss: 0.6832302194088697
+	Eval Loss: 0.6947333216667175
+EPOCH: 24
+Loss: 0.6696350667625666
+	Eval Loss: 0.6876343886057535
+EPOCH: 25
+Loss: 0.6563408747315407
+	Eval Loss: 0.6900559465090433
+EPOCH: 26
+Loss: 0.6457128841429949
+	Eval Loss: 0.6799740294615427
+EPOCH: 27
+Loss: 0.6332079041749239
+	Eval Loss: 0.667034367720286
+EPOCH: 28
+Loss: 0.6247217999771237
+	Eval Loss: 0.670705238978068
+EPOCH: 29
+Loss: 0.6160802617669106
+	Eval Loss: 0.6626852750778198
+EPOCH: 30
+Loss: 0.6081692343577743
+	Eval Loss: 0.6747650901476542
+Best Model in Epoch 29 @ 0.6626852750778198
+Test ACC: 0.7467320561408997
+Mode: Ensemble
+FF: 256
+Emb: 32
+Batch: 128
+LR: 0.0001
+Scaling: 500
+~~~TRAINING~~~
+EPOCH: 1
+Loss: 0.9542107935994864
+	Eval Loss: 0.7978419065475464
+EPOCH: 2
+Loss: 0.8454142138361931
+	Eval Loss: 0.7634879648685455
+EPOCH: 3
+Loss: 0.8012073822319508
+	Eval Loss: 0.7313410838445028
+EPOCH: 4
+Loss: 0.7716085352003574
+	Eval Loss: 0.7407588462034861
+EPOCH: 5
+Loss: 0.7554368935525417
+	Eval Loss: 0.7294916311899821
+EPOCH: 6
+Loss: 0.7327534668147564
+	Eval Loss: 0.7351598044236501
+EPOCH: 7
+Loss: 0.7245761230587959
+	Eval Loss: 0.7323141793409983
+EPOCH: 8
+Loss: 0.7234937362372875
+	Eval Loss: 0.7395491500695547
+EPOCH: 9
+Loss: 0.7182551585137844
+	Eval Loss: 0.7773699661095937
+EPOCH: 10
+Loss: 0.7103909812867641
+	Eval Loss: 0.7166087726751963
+EPOCH: 11
+Loss: 0.7018626779317856
+	Eval Loss: 0.7145902514457703
+EPOCH: 12
+Loss: 0.6931053046137094
+	Eval Loss: 0.7163110077381134
+EPOCH: 13
+Loss: 0.7086557801812887
+	Eval Loss: 0.7125205198923746
+EPOCH: 14
+Loss: 0.6873519998043776
+	Eval Loss: 0.7561949491500854
+EPOCH: 15
+Loss: 0.6881775129586458
+	Eval Loss: 0.7080183029174805
+EPOCH: 16
+Loss: 0.6836836263537407
+	Eval Loss: 0.7202167908350626
+EPOCH: 17
+Loss: 0.6674281097948551
+	Eval Loss: 0.6814518670241038
+EPOCH: 18
+Loss: 0.6610689330846071
+	Eval Loss: 0.6936603585879008
+EPOCH: 19
+Loss: 0.6352888401597738
+	Eval Loss: 0.6725008487701416
+EPOCH: 20
+Loss: 0.617886308580637
+	Eval Loss: 0.6682672699292501
+EPOCH: 21
+Loss: 0.617016889154911
+	Eval Loss: 0.660260816415151
+EPOCH: 22
+Loss: 0.6104500833898783
+	Eval Loss: 0.6710490683714548
+EPOCH: 23
+Loss: 0.6037853015586734
+	Eval Loss: 0.6636760036150614
+EPOCH: 24
+Loss: 0.5978039978072047
+	Eval Loss: 0.6778722951809565
+EPOCH: 25
+Loss: 0.5957422601059079
+	Eval Loss: 0.6440412898858389
+EPOCH: 26
+Loss: 0.5846045659855008
+	Eval Loss: 0.6781658083200455
+EPOCH: 27
+Loss: 0.5776447812095284
+	Eval Loss: 0.6665061215559641
+EPOCH: 28
+Loss: 0.5759189426898956
+	Eval Loss: 0.6607460180918375
+EPOCH: 29
+Loss: 0.5714903073385358
+	Eval Loss: 0.6685620446999868
+EPOCH: 30
+Loss: 0.5667205154895782
+	Eval Loss: 0.6841890613238016
+Best Model in Epoch 25 @ 0.6440412898858389
+Test ACC: 0.7761437892913818
+~~~TRAINING~~~
+EPOCH: 1
+Loss: 0.9125033542513847
+	Eval Loss: 0.8076085150241852
+EPOCH: 2
+Loss: 0.8430050611495972
+	Eval Loss: 0.749911367893219
+EPOCH: 3
+Loss: 0.7852805387228727
+	Eval Loss: 0.784056822458903
+EPOCH: 4
+Loss: 0.7733647134155035
+	Eval Loss: 0.7269075314203898
+EPOCH: 5
+Loss: 0.7512960601598024
+	Eval Loss: 0.7804292341073354
+EPOCH: 6
+Loss: 0.7329890076071024
+	Eval Loss: 0.7335380613803864
+EPOCH: 7
+Loss: 0.720421927049756
+	Eval Loss: 0.7304297884305319
+EPOCH: 8
+Loss: 0.7130251228809357
+	Eval Loss: 0.7319004933039347
+EPOCH: 9
+Loss: 0.7148726452142
+	Eval Loss: 0.7381730576356252
+EPOCH: 10
+Loss: 0.7127327006310225
+	Eval Loss: 0.7323269744714102
+EPOCH: 11
+Loss: 0.7210701238363981
+	Eval Loss: 0.7168082396189371
+EPOCH: 12
+Loss: 0.68905109167099
+	Eval Loss: 0.7294520139694214
+EPOCH: 13
+Loss: 0.6926346123218536
+	Eval Loss: 0.7206077973047892
+EPOCH: 14
+Loss: 0.6901025287806988
+	Eval Loss: 0.7265958686669668
+EPOCH: 15
+Loss: 0.6808461099863052
+	Eval Loss: 0.7184899648030599
+EPOCH: 16
+Loss: 0.6647088062018156
+	Eval Loss: 0.752022941907247
+EPOCH: 17
+Loss: 0.6589161865413189
+	Eval Loss: 0.7039379874865214
+EPOCH: 18
+Loss: 0.6318893693387508
+	Eval Loss: 0.7517834703127543
+EPOCH: 19
+Loss: 0.6246436536312103
+	Eval Loss: 0.6573063284158707
+EPOCH: 20
+Loss: 0.6197780640795827
+	Eval Loss: 0.6849108835061392
+EPOCH: 21
+Loss: 0.6138925887644291
+	Eval Loss: 0.6825259725252787
+EPOCH: 22
+Loss: 0.6039023082703352
+	Eval Loss: 0.6916687389214834
+EPOCH: 23
+Loss: 0.5941081494092941
+	Eval Loss: 0.6622867931922277
+EPOCH: 24
+Loss: 0.5942642064765096
+	Eval Loss: 0.6798025667667389
+EPOCH: 25
+Loss: 0.5896351458504796
+	Eval Loss: 0.6937365233898163
+EPOCH: 26
+Loss: 0.5798807004466653
+	Eval Loss: 0.6866330504417419
+EPOCH: 27
+Loss: 0.5782294990494847
+	Eval Loss: 0.720292349656423
+EPOCH: 28
+Loss: 0.5753700556233525
+	Eval Loss: 0.6541780630747477
+EPOCH: 29
+Loss: 0.5686580212786794
+	Eval Loss: 0.6528874536355337
+EPOCH: 30
+Loss: 0.5683000339195132
+	Eval Loss: 0.6876383125782013
+Best Model in Epoch 29 @ 0.6528874536355337
+Test ACC: 0.766339898109436
+
