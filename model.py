@@ -128,7 +128,6 @@ class TransformerModel(nn.Module):
 
         return clsClassification
 
-
 class LSTMSequence(nn.Module):
     def __init__(self, embSize, gpuNr=0,userembed=True):
         super(LSTMSequence, self).__init__()
@@ -142,15 +141,31 @@ class LSTMSequence(nn.Module):
 
         self.embed = nn.Embedding(num_embeddings=837, embedding_dim=self.embSize, padding_idx=0).to(self.device)
         torch.nn.init.xavier_uniform_(self.embed.weight)
-
-        self.lstm = nn.LSTM(input_size=self.embSize, hidden_size=self.embSize).to(self.device)
-
+    
+        self.lstm = nn.LSTM(input_size=self.embSize, hidden_size=self.embSize).to(self.device) #old code
+        '''
+        self.lstm = nn.LSTM(
+            input_size=self.embSize,
+            hidden_size=self.embSize,
+            num_layers=2,
+            dropout=0.3,
+            bidirectional=True,
+            batch_first=True
+        ).to(self.device)
+        '''
         self.classifier = nn.Linear(self.embSize, 3).to(self.device)
-        torch.nn.init.xavier_uniform_(self.classifier.weight)
+        #self.classifier = nn.Linear(self.embSize * 2, 3).to(self.device) 
 
+        torch.nn.init.xavier_uniform_(self.classifier.weight)
+        
         self.representationTransformation = nn.Linear(self.embSize * 2, self.embSize).to(self.device)
         torch.nn.init.xavier_uniform_(self.representationTransformation.weight)
 
+        '''
+        #Normalization and dropout post LSTM
+        self.layer_norm = nn.LayerNorm(self.embSize * 2).to(self.device)  # for bidirectional
+        self.post_lstm_dropout = nn.Dropout(0.5)
+        '''
         self.activation = nn.ReLU()
 
         # New flag for controlling user embeddings
@@ -175,7 +190,28 @@ class LSTMSequence(nn.Module):
 
         outs = self.classifier(cn[-1])
         return outs
+        '''
+        if self.use_user_embeddings:
+            userEmb = self.userEmbed(users)
+            inputrepresentation = torch.cat((embeds, userEmb.expand(embeds.shape)), dim=2)
+            inputrepresentation = self.activation(self.representationTransformation(inputrepresentation))
+        else:
+            inputrepresentation = embeds
 
+        packedInputs = rnn.pack_padded_sequence(inputrepresentation, lengths, enforce_sorted=False)
+        packedOutputs, (hn, cn) = self.lstm(packedInputs)
+        lstm_out, _ = rnn.pad_packed_sequence(packedOutputs, batch_first=True)
+
+        # Apply normalization + dropout
+        normed = self.layer_norm(lstm_out)
+        dropped = self.post_lstm_dropout(normed)
+
+        # Use the last time step of both directions
+        # (batch_size, 2*hidden_size)
+        final_out = torch.cat((hn[-2], hn[-1]), dim=1)
+
+        return self.classifier(final_out)
+        '''
 class Ensemble(nn.Module):
     def __init__(self,embSize,nrHeads,nrLayers,feedforwardDim,dropout,gpuNr = 0,f=True,userembed=True):
         super(Ensemble,self).__init__()
