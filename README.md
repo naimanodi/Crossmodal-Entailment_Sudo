@@ -4,6 +4,8 @@ Both paper and code were re-worked and will soon be updated to the latest versio
 # POV Learning: Individual Alignment of Multimodal Models using Human Perception
 This repository contains the code to recreate the experiments from the preprint (https://arxiv.org/pdf/2405.04443)
 
+The current version of the paper, as presented on HHAI 2025 can currently be found here: https://hhai-conference.org/2025/program/
+
 
 # Crossmodal-Entailment
 
