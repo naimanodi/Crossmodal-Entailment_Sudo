@@ -1,0 +1,8 @@
+dev_images/
+examples/
+output/
+out/
+test_images/
+data/test_full.json
+data/val.json
+data/train.json

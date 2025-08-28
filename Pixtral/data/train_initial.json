@@ -1,0 +1,164 @@
+[
+  {
+    "id": 0,
+    "messages": [
+      {
+        "role": "user",
+        "content": [
+          {
+            "type": "text",
+            "text": "You are user GBE0. Your task is to decide if the given caption accurately matches the provided image based on the following strict criteria: RESPONSE OPTIONS & CRITERIA: - YES: Every fact stated in the caption is clearly and accurately verifiable in the image. - NO: Facts stated in the caption is clearly and directly contradicted by the image. - UNCLEAR: At least one fact stated in the caption cannot be confidently confirmed or denied from the image (e.g., the object is out of frame, too blurry, or obscured by the heatmap). IMPORTANT: You must respond with only one of the three options above. INPUT CONTEXT: - The image is a blended visualization of a scene and a gaze-based heatmap showing your visual attention. - The Perception Sequence below shows the order of your perception. `txt` items are caption words, and `vis` items are visual objects. Use this sequence in your judgment. Consider the Perception Sequence for your judgement: txt_ski1,txt_pants1,txt_pants1,txt_are,txt_grey,txt_with1,txt_with1,txt_blue2,txt_Blue3,txt_jacket2,txt_ski1,txt_jacket2,txt_jacket2,txt_with2,txt_matching,txt_ski2,txt_pants2,txt_with2,txt_matching,vis_jacket,vis_woman,vis_jacket,vis_woman,vis_jacket,vis_woman,vis_jacket,vis_woman,vis_jacket,vis_pants,vis_woman,txt_ski1,txt_pants1,txt_with1,txt_Blue3,txt_ski1,txt_matching,txt_matching,txt_ski2,txt_pants2,vis_pants,vis_woman"
+          },
+          {
+            "type": "image",
+            "image_path": "images/GBE0_150433.png"
+          }
+        ]
+      },
+      {
+        "role": "assistant",
+        "content": [
+          {
+            "type": "text",
+            "text": "NO"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": 1,
+    "messages": [
+      {
+        "role": "user",
+        "content": [
+          {
+            "type": "text",
+            "text": "You are user IYME. Your task is to decide if the given caption accurately matches the provided image based on the following strict criteria: RESPONSE OPTIONS & CRITERIA: - YES: Every fact stated in the caption is clearly and accurately verifiable in the image. - NO: Facts stated in the caption is clearly and directly contradicted by the image. - UNCLEAR: At least one fact stated in the caption cannot be confidently confirmed or denied from the image (e.g., the object is out of frame, too blurry, or obscured by the heatmap). IMPORTANT: You must respond with only one of the three options above. INPUT CONTEXT: - The image is a blended visualization of a scene and a gaze-based heatmap showing your visual attention. - The Perception Sequence below shows the order of your perception. `txt` items are caption words, and `vis` items are visual objects. Use this sequence in your judgment. Consider the Perception Sequence for your judgement: txt_pants1,txt_Skiers,txt_Skiers,txt_pants1,txt_grey,txt_with1,txt_blue2,txt_stripe,vis_pants,vis_stripe,vis_woman,vis_pants,vis_woman,vis_pants,vis_stripe,vis_woman,txt_Blue3,txt_grey,vis_jacket,vis_woman,vis_jacket,vis_woman,vis_jacket,vis_woman"
+          },
+          {
+            "type": "image",
+            "image_path": "images/IYME_150433.png"
+          }
+        ]
+      },
+      {
+        "role": "assistant",
+        "content": [
+          {
+            "type": "text",
+            "text": "YES"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": 2,
+    "messages": [
+      {
+        "role": "user",
+        "content": [
+          {
+            "type": "text",
+            "text": "You are user LXPU. Your task is to decide if the given caption accurately matches the provided image based on the following strict criteria: RESPONSE OPTIONS & CRITERIA: - YES: Every fact stated in the caption is clearly and accurately verifiable in the image. - NO: Facts stated in the caption is clearly and directly contradicted by the image. - UNCLEAR: At least one fact stated in the caption cannot be confidently confirmed or denied from the image (e.g., the object is out of frame, too blurry, or obscured by the heatmap). IMPORTANT: You must respond with only one of the three options above. INPUT CONTEXT: - The image is a blended visualization of a scene and a gaze-based heatmap showing your visual attention. - The Perception Sequence below shows the order of your perception. `txt` items are caption words, and `vis` items are visual objects. Use this sequence in your judgment. Consider the Perception Sequence for your judgement: txt_matching,txt_skier,txt_skier,txt_skier,txt_skier,txt_skier,txt_a2,txt_blue1,txt_jacket1,vis_woman,vis_woman,txt_Skiers,txt_Skiers,txt_Skiers,txt_pants1,txt_are,txt_matching,txt_with1,txt_blue2,txt_stripe,vis_jacket,vis_woman,vis_jacket,vis_woman,txt_Blue3,txt_jacket2,txt_jacket2,txt_with2,txt_matching,txt_pants2,vis_jacket,vis_woman,vis_woman,txt_with2,txt_ski1,txt_jacket2,txt_matching,txt_matching,vis_jacket,vis_woman,vis_jacket,vis_woman"
+          },
+          {
+            "type": "image",
+            "image_path": "images/LXPU_150433.png"
+          }
+        ]
+      },
+      {
+        "role": "assistant",
+        "content": [
+          {
+            "type": "text",
+            "text": "YES"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": 3,
+    "messages": [
+      {
+        "role": "user",
+        "content": [
+          {
+            "type": "text",
+            "text": "You are user O8UQ. Your task is to decide if the given caption accurately matches the provided image based on the following strict criteria: RESPONSE OPTIONS & CRITERIA: - YES: Every fact stated in the caption is clearly and accurately verifiable in the image. - NO: Facts stated in the caption is clearly and directly contradicted by the image. - UNCLEAR: At least one fact stated in the caption cannot be confidently confirmed or denied from the image (e.g., the object is out of frame, too blurry, or obscured by the heatmap). IMPORTANT: You must respond with only one of the three options above. INPUT CONTEXT: - The image is a blended visualization of a scene and a gaze-based heatmap showing your visual attention. - The Perception Sequence below shows the order of your perception. `txt` items are caption words, and `vis` items are visual objects. Use this sequence in your judgment. Consider the Perception Sequence for your judgement: txt_pants1,txt_pants1,vis_pants,vis_woman,vis_pants,vis_woman,vis_pants,vis_stripe,vis_woman,vis_jacket,vis_woman,vis_woman,vis_jacket,vis_woman,txt_Skiers,txt_pants1,txt_are,txt_grey,txt_are,txt_with1,txt_blue2,txt_stripe,txt_stripe,vis_jacket,vis_woman,vis_pants,vis_stripe,vis_woman,vis_pants,vis_woman,txt_Skiers,txt_Skiers,txt_pants1,txt_pants1,txt_grey,vis_jacket,vis_woman,vis_pants,vis_pants,vis_woman,vis_jacket,vis_woman,vis_woman,txt_Skiers,txt_Skiers,vis_jacket,vis_woman,vis_jacket,vis_woman,txt_skier,txt_skier,txt_blue1,vis_jacket,vis_woman,vis_woman,vis_woman,vis_pants,vis_stripe,vis_woman,vis_pants,vis_stripe,vis_woman,vis_jacket,vis_woman"
+          },
+          {
+            "type": "image",
+            "image_path": "images/O8UQ_150433.png"
+          }
+        ]
+      },
+      {
+        "role": "assistant",
+        "content": [
+          {
+            "type": "text",
+            "text": "NO"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": 4,
+    "messages": [
+      {
+        "role": "user",
+        "content": [
+          {
+            "type": "text",
+            "text": "You are user UM4Y. Your task is to decide if the given caption accurately matches the provided image based on the following strict criteria: RESPONSE OPTIONS & CRITERIA: - YES: Every fact stated in the caption is clearly and accurately verifiable in the image. - NO: Facts stated in the caption is clearly and directly contradicted by the image. - UNCLEAR: At least one fact stated in the caption cannot be confidently confirmed or denied from the image (e.g., the object is out of frame, too blurry, or obscured by the heatmap). IMPORTANT: You must respond with only one of the three options above. INPUT CONTEXT: - The image is a blended visualization of a scene and a gaze-based heatmap showing your visual attention. - The Perception Sequence below shows the order of your perception. `txt` items are caption words, and `vis` items are visual objects. Use this sequence in your judgment. Consider the Perception Sequence for your judgement: vis_woman,txt_skier,txt_skier,txt_A1,txt_skier,txt_skier,txt_blue1,txt_jacket1,txt_jacket1,txt_jacket1,txt_ski1,txt_Skiers,txt_pants1,txt_are,txt_grey,txt_with1,txt_blue2,txt_stripe,txt_blue2,txt_stripe,txt_ski1,txt_Blue3,txt_with2,txt_matching,txt_ski2,txt_ski2,vis_woman,txt_pants2,txt_pants2,txt_ski2,txt_pants2,txt_ski2,txt_pants2,vis_woman,vis_jacket,vis_woman,vis_jacket,vis_woman,txt_ski1,txt_Blue3,txt_jacket2,txt_jacket2,txt_with2,txt_matching,txt_matching,txt_with2,txt_matching,txt_ski2,txt_ski2,txt_pants2,vis_pants,vis_woman,vis_pants,vis_woman,vis_jacket,vis_woman"
+          },
+          {
+            "type": "image",
+            "image_path": "images/UM4Y_150433.png"
+          }
+        ]
+      },
+      {
+        "role": "assistant",
+        "content": [
+          {
+            "type": "text",
+            "text": "YES"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": 5,
+    "messages": [
+      {
+        "role": "user",
+        "content": [
+          {
+            "type": "text",
+            "text": "You are user DVZG. Your task is to decide if the given caption accurately matches the provided image based on the following strict criteria: RESPONSE OPTIONS & CRITERIA: - YES: Every fact stated in the caption is clearly and accurately verifiable in the image. - NO: Facts stated in the caption is clearly and directly contradicted by the image. - UNCLEAR: At least one fact stated in the caption cannot be confidently confirmed or denied from the image (e.g., the object is out of frame, too blurry, or obscured by the heatmap). IMPORTANT: You must respond with only one of the three options above. INPUT CONTEXT: - The image is a blended visualization of a scene and a gaze-based heatmap showing your visual attention. - The Perception Sequence below shows the order of your perception. `txt` items are caption words, and `vis` items are visual objects. Use this sequence in your judgment. Consider the Perception Sequence for your judgement: vis_train,vis_train,txt_blue,txt_blue,txt_and,txt_train1,txt_with,txt_yellow,txt_stripe,vis_train,txt_red2,txt_light,txt_for,txt_for,vis_train,vis_yellowstripe,vis_train,vis_train,vis_train,vis_yellowstripe,vis_train,vis_redlight,vis_train,vis_train,vis_train,vis_train,vis_train,vis_train,vis_train,vis_yellowstripe,vis_train"
+          },
+          {
+            "type": "image",
+            "image_path": "images/DVZG_1593076.png"
+          }
+        ]
+      },
+      {
+        "role": "assistant",
+        "content": [
+          {
+            "type": "text",
+            "text": "UNCLEAR"
+          }
+        ]
+      }
+    ]
+  }
+]
